@@ -772,27 +772,27 @@ function renderQ(){
   }else{ showItinerary(); }
 }
 function showItinerary(){
-  updateProgress();
-  wizardEl.innerHTML="<h3 style='font-size:1.15rem'>Kết quả lịch trình</h3>";
-  let days = answers[1] === "1 ngày" ? 1 : 2;
-  let cost = answers[4];
-  let html = "<p style='font-size:1rem;'><b>Thời gian:</b> " + answers[1] + " | <b>Chi phí:</b> " + cost + "</p>";
-  html += "<table style='width:100%;border-collapse:collapse;margin-top:10px;font-size:1rem'><tr style='background:#f6f6f6'><th style='padding:8px;border:1px solid #eee;text-align:left'>Thời gian</th><th style='padding:8px;border:1px solid #eee;text-align:left'>Hoạt động</th></tr>";
-  if(days===1){
-    html+="<tr><td style='padding:8px;border:1px solid #eee'>Sáng</td><td style='padding:8px;border:1px solid #eee'>Xuất phát, ăn sáng.</td></tr>";
-    html+="<tr><td style='padding:8px;border:1px solid #eee'>Trưa</td><td style='padding:8px;border:1px solid #eee'>Đến đảo, ăn hải sản, tham quan làng chài.</td></tr>";
-    html+="<tr><td style='padding:8px;border:1px solid #eee'>Chiều</td><td style='padding:8px;border:1px solid #eee'>Dạo bờ kè, rừng ngập mặn.</td></tr>";
-    html+="<tr><td style='padding:8px;border:1px solid #eee'>Tối</td><td style='padding:8px;border:1px solid #eee'>Trở về TP.HCM.</td></tr>";
-  } else {
-    html+="<tr><td style='padding:8px;border:1px solid #eee'>Ngày 1 sáng</td><td style='padding:8px;border:1px solid #eee'>Khởi hành, đến đảo.</td></tr>";
-    html+="<tr><td style='padding:8px;border:1px solid #eee'>Ngày 1 trưa</td><td style='padding:8px;border:1px solid #eee'>Ăn hải sản, khám phá chợ.</td></tr>";
-    html+="<tr><td style='padding:8px;border:1px solid #eee'>Ngày 1 chiều</td><td style='padding:8px;border:1px solid #eee'>Check-in homestay, chụp ảnh hoàng hôn.</td></tr>";
-    html+="<tr><td style='padding:8px;border:1px solid #eee'>Ngày 1 tối</td><td style='padding:8px;border:1px solid #eee'>Ăn tối, giao lưu văn hóa.</td></tr>";
-    html+="<tr><td style='padding:8px;border:1px solid #eee'>Ngày 2 sáng</td><td style='padding:8px;border:1px solid #eee'>Tham quan rừng ngập mặn, trải nghiệm đánh bắt cá.</td></tr>";
-    html+="<tr><td style='padding:8px;border:1px solid #eee'>Ngày 2 trưa</td><td style='padding:8px;border:1px solid #eee'>Ăn trưa, chuẩn bị về lại TP.HCM.</td></tr>";
-  }
-  html += "</table>";
-  itineraryOutput.innerHTML = html;
+  updateProgress();
+  wizardEl.innerHTML="<h3 style='font-size:1.15rem'>Kết quả lịch trình</h3>";
+  let days = answers[1] === "1 ngày" ? 1 : 2;
+  let cost = answers[4];
+  let html = "<p style='font-size:1rem;'><b>Thời gian:</b> " + answers[1] + " | <b>Chi phí:</b> " + cost + "</p>";
+  html += "<table style='width:100%;border-collapse:collapse;margin-top:10px;font-size:1rem'><tr style='background:#f6f6f6'><th style='padding:8px;border:1px solid #eee;text-align:left'>Thời gian</th><th style='padding:8px;border:1px solid #eee;text-align:left'>Hoạt động</th></tr>";
+  if(days===1){
+    html+="<tr><td style='padding:8px;border:1px solid #eee'>Sáng</td><td style='padding:8px;border:1px solid #eee'>Xuất phát, ăn sáng.</td></tr>";
+    html+="<tr><td style='padding:8px;border:1px solid #eee'>Trưa</td><td style='padding:8px;border:1px solid #eee'>Đến đảo, ăn hải sản, tham quan làng chài.</td></tr>";
+    html+="<tr><td style='padding:8px;border:1px solid #eee'>Chiều</td><td style='padding:8px;border:1px solid #eee'>Dạo bờ kè, rừng ngập mặn.</td></tr>";
+    html+="<tr><td style='padding:8px;border:1px solid #eee'>Tối</td><td style='padding:8px;border:1px solid #eee'>Trở về TP.HCM.</td></tr>";
+  } else {
+    html+="<tr><td style='padding:8px;border:1px solid #eee'>Ngày 1 sáng</td><td style='padding:8px;border:1px solid #eee'>Khởi hành, đến đảo.</td></tr>";
+    html+="<tr><td style='padding:8px;border:1px solid #eee'>Ngày 1 trưa</td><td style='padding:8px;border:1px solid #eee'>Ăn hải sản, khám phá chợ.</td></tr>";
+    html+="<tr><td style='padding:8px;border:1px solid #eee'>Ngày 1 chiều</td><td style='padding:8px;border:1px solid #eee'>Check-in homestay, chụp ảnh hoàng hôn.</td></tr>";
+    html+="<tr><td style='padding:8px;border:1px solid #eee'>Ngày 1 tối</td><td style='padding:8px;border:1px solid #eee'>Ăn tối, giao lưu văn hóa.</td></tr>";
+    html+="<tr><td style='padding:8px;border:1px solid #eee'>Ngày 2 sáng</td><td style='padding:8px;border:1px solid #eee'>Tham quan rừng ngập mặn, trải nghiệm đánh bắt cá.</td></tr>";
+    html+="<tr><td style='padding:8px;border:1px solid #eee'>Ngày 2 trưa</td><td style='padding:8px;border:1px solid #eee'>Ăn trưa, chuẩn bị về lại TP.HCM.</td></tr>";
+  }
+  html += "</table>";
+  itineraryOutput.innerHTML = html;
 }
 renderQ();
 
