@@ -59,7 +59,6 @@ button{font-family:inherit}
 .menu button.active{outline:3px solid rgba(0,199,171,0.12);transform:translateY(-2px)}
 
 /* music toggle */
-#musicToggle{width:44px;height:44px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:linear-gradient(180deg,rgba(255,255,255,0.06),rgba(255,255,255,0.02));border:1px solid rgba(255,255,255,0.06);color:#fff;font-size:18px;box-shadow:0 6px 18px rgba(0,0,0,0.15)}
 
 /* ===== Hero ===== */
 .header{
@@ -524,10 +523,6 @@ Các bãi nghêu, hàu dọc bờ biển, nơi người dân lao động hàng n
   </div>
 </div>
 
-<!-- Audio -->
-<audio id="bgMusic" loop>
-  <source src="https://cdn.pixabay.com/audio/2022/03/15/audio_643b77c03c.mp3" type="audio/mpeg">
-</audio>
 
 <!-- Gift popup -->
 <div class="gift-modal" id="giftModal" aria-hidden="true" role="dialog" aria-modal="true">
@@ -923,7 +918,7 @@ document.addEventListener('DOMContentLoaded',function(){
 #pinkChatBtn{position:fixed;right:22px;bottom:22px;width:56px;height:56px;border:none;border-radius:50%;background:#ff7fbf;color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:99999;box-shadow:0 10px 26px rgba(0,0,0,.18);font-size:22px}
 #pinkChatPanel{position:fixed;right:22px;bottom:92px;width:360px;max-width:92vw;height:480px;border-radius:12px;background:#fff;box-shadow:0 20px 60px rgba(2,20,40,.18);display:none;z-index:99999;overflow:hidden;font-family:inherit}
 #pinkChatPanel .header{background:#ff7fbf;color:#fff;padding:12px 14px;font-weight:700;display:flex;justify-content:space-between;align-items:center}
-#pinkChatPanel .body{padding:12px;height:320px;overflow:auto;background:#fff}
+#pinkChatPanel .body{padding:30px;height:320px;overflow:auto;background:#fff}
 #pinkChatPanel .chips{display:flex;flex-wrap:wrap;gap:8px;padding:8px 12px;border-top:1px solid #f3c8dd;background:#fff5fb}
 #pinkChatPanel .chip{padding:6px 10px;border-radius:999px;background:#ffe6f2;color:#b04a86;font-weight:600;cursor:pointer;border:1px solid #ffd6ee}
 #pinkChatPanel .footer{padding:8px 12px;display:flex;gap:8px;border-top:1px solid #eee}
@@ -1095,9 +1090,6 @@ document.addEventListener('DOMContentLoaded', function(){
 });
 </script>
 
-
-<audio id="bgMusic" loop preload="auto"><source src="assets/bg-music.mp3" type="audio/mpeg"></audio>
-<button id="musicToggle" aria-label="Bật/Tắt nhạc" style="position:fixed;right:18px;top:18px;z-index:99999;padding:8px 10px;border-radius:8px;background:#ff9fc3;border:none;color:#fff;box-shadow:0 6px 18px rgba(0,0,0,0.15);cursor:pointer">🎵</button>
 <script>
 (function(){
   const music = document.getElementById('bgMusic');
