@@ -1,4 +1,4 @@
-         <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="vi">
 <head>
 <meta charset="utf-8" />
@@ -12,48 +12,48 @@ html,body{height:100%;font-family:"Segoe UI",system-ui,-apple-system,Roboto,"Hel
 a{color:inherit}
 button{font-family:inherit}
 .section img {
-  transition: transform .3s ease;
+  transition: transform .3s ease;
 }
 .section img:hover {
-  transform: scale(1.02);
+  transform: scale(1.02);
 }
 @media(min-width:768px){
-  .section h3 + p + img {
-    float:right;
-    width:48%;
-    margin:0 0 12px 12px;
-  }
-  .section h3 + img {
-    float:left;
-    width:48%;
-    margin:0 12px 12px 0;
-  }
+  .section h3 + p + img {
+    float:right;
+    width:48%;
+    margin:0 0 12px 12px;
+  }
+  .section h3 + img {
+    float:left;
+    width:48%;
+    margin:0 12px 12px 0;
+  }
 }
 
 /* ===== Background (selected Unsplash photo) ===== */
 .bg-full{
-  position:fixed;inset:0;z-index:-50;
-  background-image:url('https://go2joy.s3.ap-southeast-1.amazonaws.com/blog/wp-content/uploads/2022/02/14072947/ly-do-nen-di-dao-thanh-an-1.jpg');
-  background-size:cover;background-position:center;
-  filter:contrast(.98) saturate(1.05) blur(.5px);
+  position:fixed;inset:0;z-index:-50;
+  background-image:url('https://go2joy.s3.ap-southeast-1.amazonaws.com/blog/wp-content/uploads/2022/02/14072947/ly-do-nen-di-dao-thanh-an-1.jpg');
+  background-size:cover;background-position:center;
+  filter:contrast(.98) saturate(1.05) blur(.5px);
 }
 .bg-overlay{
-  position:fixed;inset:0;z-index:-49;
-  background:linear-gradient(180deg, rgba(201, 194, 66, 0.08), rgba(2,20,24,0.12));
-  box-shadow: inset 0 0 120px rgba(232, 232, 85, 0.06);
+  position:fixed;inset:0;z-index:-49;
+  background:linear-gradient(180deg, rgba(201, 194, 66, 0.08), rgba(2,20,24,0.12));
+  box-shadow: inset 0 0 120px rgba(232, 232, 85, 0.06);
 }
 
 /* ===== Topbar (menu + music) ===== */
 .topbar{
-  position:fixed;top:18px;right:70px;z-index:80;display:flex;align-items:center;gap:10px;padding:0px;border-radius:12px;
-  background:linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
-  backdrop-filter: blur(6px);box-shadow:0 10px 30px rgba(2,40,40,0.12);
+  position:fixed;top:18px;right:70px;z-index:80;display:flex;align-items:center;gap:10px;padding:0px;border-radius:12px;
+  background:linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+  backdrop-filter: blur(6px);box-shadow:0 10px 30px rgba(2,40,40,0.12);
 }
 .menu{display:flex;gap:8px;flex-wrap:wrap}
 .menu button{
-  background: #ffffff;
-  color:#0069ad;border:none;padding:9px 14px;border-radius:10px;font-weight:800;cursor:pointer;transition:all .18s ease;
-  box-shadow:0 6px 18px rgba(0,130,115,0.12);font-size:0.95rem;
+  background: #ffffff;
+  color:#0069ad;border:none;padding:9px 14px;border-radius:10px;font-weight:800;cursor:pointer;transition:all .18s ease;
+  box-shadow:0 6px 18px rgba(0,130,115,0.12);font-size:0.95rem;
 }
 .menu button:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(0,130,115,0.18)}
 .menu button.active{outline:3px solid rgba(0,199,171,0.12);transform:translateY(-2px)}
@@ -63,36 +63,36 @@ button{font-family:inherit}
 
 /* ===== Hero ===== */
 .header{
-  height:100vh;display:flex;align-items:center;justify-content:center;padding:28px;position:relative;z-index:30;text-align:center;
+  height:100vh;display:flex;align-items:center;justify-content:center;padding:28px;position:relative;z-index:30;text-align:center;
 }
 .hero-card{
-  text-align:center;color:#fff;padding:36px;border-radius:14px;max-width:1100px;width:100%;
-  background:linear-gradient(180deg, rgba(0,0,0,0.18), rgba(0,0,0,0.08));
-  backdrop-filter: blur(6px);
-  box-shadow:0 18px 60px rgba(0,20,30,0.45);
-  position:relative;
+  text-align:center;color:#fff;padding:36px;border-radius:14px;max-width:1100px;width:100%;
+  background:linear-gradient(180deg, rgba(0,0,0,0.18), rgba(0,0,0,0.08));
+  backdrop-filter: blur(6px);
+  box-shadow:0 18px 60px rgba(0,20,30,0.45);
+  position:relative;
 }
 .hero-title{
-  font-size:3.2rem;line-height:1.02;margin-bottom:8px;font-weight:800;
-  color: #0b5563; /* xanh biển tối hơn cho chữ trang bìa */
-  text-shadow:0 6px 14px rgba(255,255,255,0.25);
-  animation:heroPop 1200ms cubic-bezier(.2,.9,.2,1);
+  font-size:3.2rem;line-height:1.02;margin-bottom:8px;font-weight:800;
+  color: #0b5563; /* xanh biển tối hơn cho chữ trang bìa */
+  text-shadow:0 6px 14px rgba(255,255,255,0.25);
+  animation:heroPop 1200ms cubic-bezier(.2,.9,.2,1);
 }
 .hero-sub{font-size:1.25rem;color:#0d7b88;font-style:italic;margin-bottom:8px}
 .hero-credit{color:#0a6b78;font-size:1.05rem;margin-top:6px;font-weight:600}
 .hero-card::before{
-  content:"";position:absolute;left:50%;top:36%;transform:translate(-50%,-50%);
-  width:680px;height:240px;background:radial-gradient(circle at center, rgba(11,85,99,0.12), rgba(11,85,99,0.03) 30%, transparent 55%);
-  filter:blur(18px);border-radius:40px;z-index:-1;opacity:.9;
+  content:"";position:absolute;left:50%;top:36%;transform:translate(-50%,-50%);
+  width:680px;height:240px;background:radial-gradient(circle at center, rgba(11,85,99,0.12), rgba(11,85,99,0.03) 30%, transparent 55%);
+  filter:blur(18px);border-radius:40px;z-index:-1;opacity:.9;
 }
 @keyframes heroPop{0%{opacity:0;transform:translateY(18px) scale(.96)}60%{opacity:1;transform:translateY(-8px) scale(1.02)}100%{transform:none}}
 
 /* ===== Main content container ===== */
 .main-wrap{position:relative;z-index:40;padding:36px 24px 80px;max-width:1200px;margin:0 auto}
 .section{
-  background:linear-gradient(180deg, rgba(255,255,255,0.98), rgba(255,255,255,0.96));
-  margin:26px 0;padding:28px;border-radius:12px;box-shadow:0 20px 50px rgba(2,40,60,0.08);
-  color:#123;transition:transform .25s ease,opacity .25s ease;
+  background:linear-gradient(180deg, rgba(255,255,255,0.98), rgba(255,255,255,0.96));
+  margin:26px 0;padding:28px;border-radius:12px;box-shadow:0 20px 50px rgba(2,40,60,0.08);
+  color:#123;transition:transform .25s ease,opacity .25s ease;
 }
 .section h2{font-size:1.9rem;color:#0b5563;margin-bottom:10px}
 .section p{line-height:1.6;font-size:1.05rem;}
@@ -158,18 +158,18 @@ button{font-family:inherit}
 
 /* ===== Chat widget (hidden until user scrolls to Lịch trình) ===== */
 .chat-toggle {
-  position:fixed; right:22px; bottom:22px; z-index:1400;
-  width:54px;height:54px;border-radius:50%;
-  display:flex;align-items:center;justify-content:center;
-  background:#2b7a78;border:none;color:#fff;font-size:24px;transition:all .25s;
-  box-shadow:0 12px 30px rgba(0,0,0,0.18);
+  position:fixed; right:22px; bottom:22px; z-index:1400;
+  width:54px;height:54px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  background:#2b7a78;border:none;color:#fff;font-size:24px;transition:all .25s;
+  box-shadow:0 12px 30px rgba(0,0,0,0.18);
 }
 .chat-toggle.show{opacity:1;transform:scale(1)}
 .chat-window{
-  position:fixed; right:22px; bottom:86px; z-index:1400;
-  width:330px; max-width:92vw; height:420px; border-radius:16px; overflow:hidden;
-  box-shadow:0 20px 60px rgba(0,0,0,0.18); background:linear-gradient(180deg,#ffffff,#f7fafb);
-  display:none; flex-direction:column;
+  position:fixed; right:22px; bottom:86px; z-index:1400;
+  width:330px; max-width:92vw; height:420px; border-radius:16px; overflow:hidden;
+  box-shadow:0 20px 60px rgba(0,0,0,0.18); background:linear-gradient(180deg,#ffffff,#f7fafb);
+  display:none; flex-direction:column;
 }
 .chat-window.show{display:flex}
 .chat-header{padding:12px 16px;background:#2b7a78;color:#fff;border-bottom:1px solid rgba(0,0,0,0.06);display:flex;align-items:center;justify-content:space-between;font-weight:600;font-size:15px}
@@ -187,21 +187,21 @@ button{font-family:inherit}
 
 /* ===== Responsive ===== */
 @media (max-width:1000px){
-  .hero-title{font-size:2.4rem}
-  .tour-item{flex:1 1 100%}
-  .tour-item img{height:320px}
-  .map-wrap iframe{height:300px}
-  .menu{gap:6px}
-  .transport{flex:1 1 100%}
-  .food-card{flex:1 1 100%}
+  .hero-title{font-size:2.4rem}
+  .tour-item{flex:1 1 100%}
+  .tour-item img{height:320px}
+  .map-wrap iframe{height:300px}
+  .menu{gap:6px}
+  .transport{flex:1 1 100%}
+  .food-card{flex:1 1 100%}
 }
 @media (max-width:640px){
-  .hero-card{padding:18px}
-  .hero-title{font-size:1.8rem}
-  .main-wrap{padding:16px}
-  .options button{font-size:.95rem;padding:10px 12px}
-  .map-wrap iframe{height:230px}
-  .chat-window{right:12px;left:12px;bottom:80px;width:auto}
+  .hero-card{padding:18px}
+  .hero-title{font-size:1.8rem}
+  .main-wrap{padding:16px}
+  .options button{font-size:.95rem;padding:10px 12px}
+  .map-wrap iframe{height:230px}
+  .chat-window{right:12px;left:12px;bottom:80px;width:auto}
 }
 </style>
 
@@ -217,12 +217,12 @@ button{font-family:inherit}
 <style>
 /* Wizard tooltip (fade) */
 #wizardTooltip{
-  position:absolute; display:none; opacity:0;
-  background:#fff0fb; color:#7a2c57; border:1px solid #ffd6ee; 
-  padding:8px 10px; border-radius:8px; box-shadow:0 10px 30px rgba(0,0,0,.08);
-  z-index:9999; max-width:280px; pointer-events:none; transition:opacity .18s ease, transform .18s ease;
-  transform:translateY(6px);
-  font-size: 14px; font-weight: 600;
+  position:absolute; display:none; opacity:0;
+  background:#fff0fb; color:#7a2c57; border:1px solid #ffd6ee; 
+  padding:8px 10px; border-radius:8px; box-shadow:0 10px 30px rgba(0,0,0,.08);
+  z-index:9999; max-width:280px; pointer-events:none; transition:opacity .18s ease, transform .18s ease;
+  transform:translateY(6px);
+  font-size: 14px; font-weight: 600;
 }
 #wizardTooltip.show { display:block; opacity:1; transform:translateY(0); }
 </style>
@@ -230,12 +230,12 @@ button{font-family:inherit}
 
 <style>
 #wizardTooltip{
-  position:absolute; display:none; opacity:0;
-  background:#fff0fb; color:#333; border:1px solid #ffd6ee; 
-  padding:8px 10px; border-radius:8px; box-shadow:0 10px 30px rgba(0,0,0,.08);
-  z-index:9999; max-width:280px; pointer-events:none; 
-  transform:translateY(6px); transition:opacity .18s ease, transform .18s ease;
-  font-size:14px; font-weight:600;
+  position:absolute; display:none; opacity:0;
+  background:#fff0fb; color:#333; border:1px solid #ffd6ee; 
+  padding:8px 10px; border-radius:8px; box-shadow:0 10px 30px rgba(0,0,0,.08);
+  z-index:9999; max-width:280px; pointer-events:none; 
+  transform:translateY(6px); transition:opacity .18s ease, transform .18s ease;
+  font-size:14px; font-weight:600;
 }
 #wizardTooltip.show{ display:block; opacity:1; transform:translateY(0); }
 </style>
@@ -243,45 +243,40 @@ button{font-family:inherit}
 </head>
 <body>
 
-<!-- Background -->
 <div class="bg-full" aria-hidden="true"></div>
 <div class="bg-overlay" aria-hidden="true"></div>
 
-<!-- Topbar: menu + music -->
 <div class="topbar" role="banner" aria-label="Top controls">
-  <div class="menu" role="navigation" aria-label="Main menu">
-    <button data-target="sec-gioithieu" class="active">Giới thiệu</button>
-    <button data-target="sec-diadiem">Địa điểm</button>
-    <button data-target="sec-phuongtien">Phương tiện</button>
-    <button data-target="sec-amthuc">Ẩm thực</button>
-    <button data-target="sec-lichtrinh">Gợi ý lịch trình</button>
-    <button data-target="sec-danhgia">Đánh giá</button>
-    <button data-target="sec-gopy">Góp ý</button>
-    <button data-target="sec-lienhe">Liên hệ</button>
-  </div>
-  <button id="musicToggle" title="Bật/Tắt nhạc" aria-pressed="false">🔇</button>
+  <div class="menu" role="navigation" aria-label="Main menu">
+    <button data-target="sec-gioithieu" class="active">Giới thiệu</button>
+    <button data-target="sec-diadiem">Địa điểm</button>
+    <button data-target="sec-phuongtien">Phương tiện</button>
+    <button data-target="sec-amthuc">Ẩm thực</button>
+    <button data-target="sec-lichtrinh">Gợi ý lịch trình</button>
+    <button data-target="sec-danhgia">Đánh giá</button>
+    <button data-target="sec-gopy">Góp ý</button>
+    <button data-target="sec-lienhe">Liên hệ</button>
+  </div>
+  <button id="musicToggle" title="Bật/Tắt nhạc" aria-pressed="false">🔇</button>
 </div>
 
-<!-- Hero -->
 <header class="header" role="banner" style="background-image: url('anhbia.jpg'); background-size: cover; background-position: center;">
-  <div class="hero-card" role="heading" aria-level="1">
-    <div class="hero-title hero-equal">
-      <span class="glow">Thạnh An sóng vỗ hiền hòa người dân chân chất mặn mà tình quê</span>
-    </div>
-    <div class="hero-credit">
-      Một sản phẩm giới thiệu du lịch Thạnh An do học sinh thực hiện
-    </div>
-  </div>
+  <div class="hero-card" role="heading" aria-level="1">
+    <div class="hero-title hero-equal">
+      <span class="glow">Thạnh An sóng vỗ hiền hòa người dân chân chất mặn mà tình quê</span>
+    </div>
+    <div class="hero-credit">
+      Một sản phẩm giới thiệu du lịch Thạnh An do học sinh thực hiện
+    </div>
+  </div>
 </header>
 
-<!-- Main content area -->
 <div class="main-wrap" role="main">
 
-  <!-- GIỚI THIỆU (updated) -->
-  <article id="sec-gioithieu" class="section" role="article" aria-labelledby="sec-gioithieu-title">
-    <h2 id="sec-gioithieu-title">Giới thiệu</h2>
-  
-<p><b>Xã đảo Thạnh An</b> thuộc Thành phố Hồ Chí Minh, nằm cách trung tâm thành phố khoảng <b>70km về phía Đông Nam cách Cần Thạnh khoảng 8km đường biển. Xã nằm giữa hai con sông lớn là sông Thị Vải và sông Lòng Tàu. </b> Đây là hòn đảo duy nhất có người sinh sống, <b>xã gồm 3 ấp: Thạnh Hòa, Thạnh Bình và Thiềng Liềng. Trong đó, ấp Thạnh Hòa và Thạnh Bình</b> nằm chung trên hòn đảo chính (đảo Thạnh An), còn ấp Thiềng Liềng là một ấp đảo riêng biệt, nổi tiếng với nghề làm muối truyền thống.</p>
+    <article id="sec-gioithieu" class="section" role="article" aria-labelledby="sec-gioithieu-title">
+    <h2 id="sec-gioithieu-title">Giới thiệu</h2>
+  
+<p><b>Xã đảo Thạnh An</b> thuộc Thành phố Hồ Chí Minh, nằm cách trung tâm thành phố khoảng <b>70km về phía Đông Nam, cách Cần Thạnh khoảng 8km đường biển. Xã nằm giữa hai con sông lớn là sông Thị Vải và sông Lòng Tàu. </b> Đây là hòn đảo duy nhất có người sinh sống, <b>xã gồm 3 ấp: Thạnh Hòa, Thạnh Bình và Thiềng Liềng. Trong đó, ấp Thạnh Hòa và Thạnh Bình</b> nằm chung trên hòn đảo chính (đảo Thạnh An), còn ấp Thiềng Liềng là một ấp đảo riêng biệt, nổi tiếng với nghề làm muối truyền thống.</p>
 <p>Bạn đã từng nghe đến hoặc ghé thăm hòn đảo bình dị này chưa? Nơi đây nổi bật với khung cảnh yên bình, bao quanh bởi rừng ngập mặn xanh bạt ngàn, sông và biển cả mênh mông. Đến Thạnh An, bạn sẽ được tận hưởng không khí trong lành, khác biệt hẳn so với sự ồn ào, tấp nập của phố thị. Người dân Thạnh An nổi tiếng với sự chân chất, hiền hòa và mến khách. Họ chủ yếu sống bằng nghề đánh bắt, nuôi trồng thủy sản (như nuôi hàu, tôm) và đang dần phát triển loại hình du lịch cộng đồng.</p>
 <p><b>Những cảnh quan đặc sắc không thể bỏ qua:</b><br>
 Con đường đê chắn sóng đá độc đáo, là nơi lý tưởng để ngắm bình minh/hoàng hôn.<br>
@@ -289,915 +284,226 @@ Rừng ngập mặn ở ấp Thiềng Liềng với hệ sinh thái đa dạng, 
 Các bãi nghêu, hàu dọc bờ biển, nơi người dân lao động hàng ngày.</p>
 <p>Thạnh An là điểm đến lý tưởng cho những ai muốn tìm về sự mộc mạc, gần gũi với thiên nhiên và trải nghiệm cuộc sống đơn sơ, bình yên của người dân vùng biển.</p>
 <p><em>Nguồn: <a href="https://www.hcmcpv.org.vn/tin-tuc/phat-trien-xa-dao-thanh-an-tphcm-trong-truc-dich-vu-logistics-du-lich-bien-1491938476" target="_blank" rel="noopener">Trang TTĐT Thành ủy TP.HCM</a></em></p>
-<!-- ĐỊA ĐIỂM THAM QUAN -->
 <article id="sec-diadiem" class="section" role="article" aria-labelledby="sec-diadiem-title">
-  <h2 id="sec-diadiem-title">Địa điểm tham quan</h2>
+  <h2 id="sec-diadiem-title">Địa điểm tham quan</h2>
 
-  <!-- 🌊 1. Điểm đến du lịch -->
-  <h3>Điểm đến du lịch</h3>
-  <p>Đảo Thạnh An tuy diện tích nhỏ nhưng vẫn có cho mình những hàng quán hải sản tươi ngon, giá cả hợp lí.
-  Một số bài viết nhận xét rằng hải sản ở Thạnh An “tươi ngon với giá cực rẻ”. 
-  Lưu ý: mặc dù có chợ hải sản nổi tiếng ở khu vực Cần Giờ như Chợ Hàng Dương (Thị trấn Cần Thạnh) nhưng việc mua hải sản tại đảo Thạnh An lại là trải nghiệm rất “địa phương”.</p>
-  
-  <img src="daothanhan2.png" alt="Đảo Thạnh An"
-       style="width:100%;height: 30%;border-radius:12px;margin:12px 0;box-shadow:0 8px 22px rgba(0,0,0,0.12)">
-  <h3>Nguồn:</h3>
-  
-  <p>Nếu đi mua hải sản để tự chế biến, hãy hỏi rõ giá, tìm quầy đông người và nhớ hỏi xem có chế biến tại chỗ không (nhiều nơi làm dịch vụ). 
-  Thời điểm tốt nhất: buổi trưa khi tàu cá vừa cập bến — bạn sẽ chọn được loại ngon, tươi và rẻ nhất.</p>
+    <h3>Điểm đến du lịch</h3>
+  <p>Đảo Thạnh An tuy diện tích nhỏ nhưng vẫn có cho mình những hàng quán hải sản tươi ngon, giá cả hợp lí.
+  Một số bài viết nhận xét rằng hải sản ở Thạnh An “tươi ngon với giá cực rẻ”. 
+  Lưu ý: mặc dù có chợ hải sản nổi tiếng ở khu vực Cần Giờ như Chợ Hàng Dương (Thị trấn Cần Thạnh) nhưng việc mua hải sản tại đảo Thạnh An lại là trải nghiệm rất “địa phương”.</p>
+  
+  <img src="daothanhan2.png" alt="Đảo Thạnh An"
+       style="width:100%;height: 30%;border-radius:12px;margin:12px 0;box-shadow:0 8px 22px rgba(0,0,0,0.12)">
+  <h3>Nguồn:</h3>
+  
+  <p>Nếu đi mua hải sản để tự chế biến, hãy hỏi rõ giá, tìm quầy đông người và nhớ hỏi xem có chế biến tại chỗ không (nhiều nơi làm dịch vụ). 
+  Thời điểm tốt nhất: buổi trưa khi tàu cá vừa cập bến — bạn sẽ chọn được loại ngon, tươi và rẻ nhất.</p>
 
-  <!-- 🪨 2. BỜ KÈ ĐÁ -->
-  <h3>Bờ kè đá</h3>
-  <p>Một trong những điểm “check-in” nổi bật tại Thạnh An là đoạn bờ kè đá nằm sát bờ biển — phong cảnh nơi này hoang sơ, tĩnh lặng, rất khác với chốn đông đúc. 
-  Du khách có thể dạo bộ bên bờ kè, ngồi hóng gió chiều hoặc chụp cảnh hoàng hôn tuyệt đẹp.</p>
-  
-  <img src="diadiem1.jpg" alt="Bờ kè đá Thạnh An"
-       style="width:100%;border-radius:12px;margin:12px 0;box-shadow:0 8px 22px rgba(0,0,0,0.12)">
-  
-  <p>Mẹo nhỏ: hãy mang theo máy ảnh hoặc điện thoại sạc đầy pin — thời điểm hoàng hôn từ 16h30 đến 17h30 là lúc ánh sáng đẹp nhất để chụp ảnh.</p>
+    <h3>Bờ kè đá</h3>
+  <p>Một trong những điểm “check-in” nổi bật tại Thạnh An là đoạn bờ kè đá nằm sát bờ biển — phong cảnh nơi này hoang sơ, tĩnh lặng, rất khác với chốn đông đúc. 
+  Du khách có thể dạo bộ bên bờ kè, ngồi hóng gió chiều hoặc chụp cảnh hoàng hôn tuyệt đẹp.</p>
+  
+  <img src="diadiem1.jpg" alt="Bờ kè đá Thạnh An"
+       style="width:100%;border-radius:12px;margin:12px 0;box-shadow:0 8px 22px rgba(0,0,0,0.12)">
+  
+  <p>Mẹo nhỏ: hãy mang theo máy ảnh hoặc điện thoại sạc đầy pin — thời điểm hoàng hôn từ 16h30 đến 17h30 là lúc ánh sáng đẹp nhất để chụp ảnh.</p>
 
-  <!-- 🌿 3. RỪNG NGẬP MẶN -->
-  <h3>Rừng ngập mặn</h3>
-  <p>Xã đảo Thạnh An nằm giữa vùng sinh thái rừng ngập mặn thuộc Khu dự trữ sinh quyển Rừng Sác – một phần của hệ sinh thái đặc trưng vùng biển Đông Nam Bộ.</p>
-  
-  <img src="rungngapman.jpg" alt="Rừng ngập mặn ở Thạnh An"
-       style="width:100%;border-radius:12px;margin:12px 0;box-shadow:0 8px 22px rgba(0,0,0,0.12)">
-        <h3>Nguồn: Báo Ảnh Việt Nam</h3>
-  
-  <p>Du khách có thể tham gia trải nghiệm như đi thuyền kayak hoặc xuồng ba lá len lỏi qua các con rạch nhỏ, chiêm ngưỡng hệ sinh thái đước, bần. 
-  Thời điểm đẹp nhất: sáng sớm (6h–8h) hoặc chiều (15h–17h) khi nắng xiên qua tán cây tạo nên khung cảnh vàng óng lung linh.</p>
+    <h3>Rừng ngập mặn</h3>
+  <p>Xã đảo Thạnh An nằm giữa vùng sinh thái rừng ngập mặn thuộc Khu dự trữ sinh quyển Rừng Sác – một phần của hệ sinh thái đặc trưng vùng biển Đông Nam Bộ.</p>
+  
+  <img src="rungngapman.jpg" alt="Rừng ngập mặn ở Thạnh An"
+       style="width:100%;border-radius:12px;margin:12px 0;box-shadow:0 8px 22px rgba(0,0,0,0.12)">
+        <h3>Nguồn: Báo Ảnh Việt Nam</h3>
+  
+  <p>Du khách có thể tham gia trải nghiệm như đi thuyền kayak hoặc xuồng ba lá len lỏi qua các con rạch nhỏ, chiêm ngưỡng hệ sinh thái đước, bần. 
+  Thời điểm đẹp nhất: sáng sớm (6h–8h) hoặc chiều (15h–17h) khi nắng xiên qua tán cây tạo nên khung cảnh vàng óng lung linh.</p>
 
-  <!-- 🧂 4. ẤP THIỀNG LIỀNG -->
-  <h3>Ấp Thiềng Liềng</h3>
-  <p>Ấp Thiềng Liềng là một ấp đảo thuộc xã Thạnh An, được ví như “đảo trong đảo”, cách trung tâm xã khoảng 7 km đường thủy. 
-  Dân cư chủ yếu làm nghề làm muối truyền thống, đánh bắt nhỏ và sống rất giản dị. 
-  Du lịch cộng đồng tại đây đang phát triển, du khách có thể đạp xe quanh đảo, tham gia làm muối, thưởng thức hải sản địa phương.</p>
+    <h3>Ấp Thiềng Liềng</h3>
+  <p>Ấp Thiềng Liềng là một ấp đảo thuộc xã Thạnh An, được ví như “đảo trong đảo”, cách trung tâm xã khoảng 7 km đường thủy. 
+  Dân cư chủ yếu làm nghề làm muối truyền thống, đánh bắt nhỏ và sống rất giản dị. 
+  Du lịch cộng đồng tại đây đang phát triển, du khách có thể đạp xe quanh đảo, tham gia làm muối, thưởng thức hải sản địa phương.</p>
 
-  <img src="apdaothienglieng.webp" alt="Ấp Thiềng Liềng - đảo trong đảo"
-       style="width:100%;border-radius:12px;margin:12px 0;box-shadow:0 8px 22px rgba(0,0,0,0.12)">
-         <h3>Nguồn: Du Lịch Dế Mèn</h3>
-  
-  <p>Vì nằm tách biệt nên nếu muốn đến Thiềng Liềng, bạn nên hỏi kỹ phương tiện (đò hoặc xuồng) và thời gian quay về. 
-  Lưu ý: kiểm tra kỹ thông tin công ty du lịch, lịch trình và chi phí để đảm bảo an toàn.</p>
+  <img src="apdaothienglieng.webp" alt="Ấp Thiềng Liềng - đảo trong đảo"
+       style="width:100%;border-radius:12px;margin:12px 0;box-shadow:0 8px 22px rgba(0,0,0,0.12)">
+         <h3>Nguồn: Du Lịch Dế Mèn</h3>
+  
+  <p>Vì nằm tách biệt nên nếu muốn đến Thiềng Liềng, bạn nên hỏi kỹ phương tiện (đò hoặc xuồng) và thời gian quay về. 
+  Lưu ý: kiểm tra kỹ thông tin công ty du lịch, lịch trình và chi phí để đảm bảo an toàn.</p>
 
-  <!-- 🐚 5. ẤP THẠNH HÒA & THẠNH BÌNH -->
-  <h3>Lăng Ông - Thủy Tướng xã Thạnh An</h3>
-  <p>Hàng năm, vào dịp Rằm tháng Tám (15/8 Âm lịch), tại lăng diễn ra Lễ hội "Nghinh Ông Thủy Tướng". Đây là lễ hội lớn nhất, thu hút đông đảo người dân địa phương và du khách tham gia với các nghi thức truyền thống đặc sắc để cầu mưa thuận gió hòa, đánh bắt thuận lợi.</p>
+    <h3>Lăng Ông - Thủy Tướng xã Thạnh An</h3>
+  <p>Hàng năm, vào dịp Rằm tháng Tám (15/8 Âm lịch), tại lăng diễn ra Lễ hội "Nghinh Ông Thủy Tướng". Đây là lễ hội lớn nhất, thu hút đông đảo người dân địa phương và du khách tham gia với các nghi thức truyền thống đặc sắc để cầu mưa thuận gió hòa, đánh bắt thuận lợi.</p>
 
-  <img src="diadiem4.jpg" alt="Ấp Thạnh Hòa và Ấp Thạnh Bình"
-       style="width:100%;border-radius:12px;margin:12px 0;box-shadow:0 8px 22px rgba(0,0,0,0.12)">
-  
-  <p>Lăng Ông Thủy Tướng đã được công nhận là di tích kiến trúc nghệ thuật độc đáo.</p>
+  <img src="diadiem4.jpg" alt="Ấp Thạnh Hòa và Ấp Thạnh Bình"
+       style="width:100%;border-radius:12px;margin:12px 0;box-shadow:0 8px 22px rgba(0,0,0,0.12)">
+  
+  <p>Lăng Ông Thủy Tướng đã được công nhận là di tích kiến trúc nghệ thuật độc đáo.</p>
 </article>
-           
+           
 <article id="sec-phuongtien" class="section" role="article" aria-labelledby="sec-phuongtien-title">
 <p><strong>Mẹo nhỏ Bổ sung:</strong> Thuê xe đạp/đi bộ để khám phá; ăn uống nên ghé chợ buổi sáng sớm hoặc trưa; nếu lưu trú qua đêm, nên liên hệ trước các homestay để đảm bảo có chỗ nghỉ.</p>
 <h2 id="sec-phuongtien-title">Phương tiện</h2>
-    <p>Dưới đây là các phương tiện phổ biến để đến xã đảo Thạnh An, kèm giờ giấc & giá tham khảo:</p>
+    <p>Dưới đây là các phương tiện phổ biến để đến xã đảo Thạnh An, kèm giờ giấc & giá tham khảo:</p>
 
-    <div class="transport-grid" role="list">
-      <div class="transport" role="listitem">
-        <img src="phuongtien2.jpg" alt="Tàu/kano">
-        <div class="info">
-          <h4>Tàu khách / Phà</h4>
-          <p>Giờ chạy: khoảng 6:30 - 17:00 (nhiều chuyến theo ngày).<br>Giá vé tham khảo: 15.000đ - 40.000đ/vé (tùy loại phương tiện).<br>Thời gian: ~45 - 60 phút từ bến Cần Thạnh.</p>
-          <p><a href="https://www.google.com/maps?q=C%E1%BA%A7n+Th%E1%BA%AFnh+harbor" target="_blank" rel="noopener">Xem vị trí bến tàu</a></p>
-        </div>
-      </div>
+    <div class="transport-grid" role="list">
+      <div class="transport" role="listitem">
+        <img src="phuongtien2.jpg" alt="Tàu/kano">
+        <div class="info">
+          <h4>Tàu khách / Phà</h4>
+          <p>Giờ chạy: khoảng 6:30 - 17:00 (nhiều chuyến theo ngày).<br>Giá vé tham khảo: 15.000đ - 40.000đ/vé (tùy loại phương tiện).<br>Thời gian: ~45 - 60 phút từ bến Cần Thạnh.</p>
+          <p><a href="https://www.google.com/maps?q=C%E1%BA%A7n+Th%E1%BA%AFnh+harbor" target="_blank" rel="noopener">Xem vị trí bến tàu</a></p>
+        </div>
+      </div>
 
-      <div class="transport" role="listitem">
-        <img src="phuongtien3.jpg" alt="Xe buýt">
-        <div class="info">
-          <h4>Xe buýt + chuyển tàu</h4>
-          <p>Đi xe buýt đến bến Cần Thạnh (kết nối từ TP.HCM).<br>Giá vé xe buýt: ~20.000đ/lượt. Thời gian: 60–90 phút (tùy tuyến).</p>
-          <p><a href="https://www.google.com/maps?q=b%C3%A9n+xe+bus+C%E1%BA%A7n+Th%E1%BA%AFnh" target="_blank" rel="noopener">Hướng dẫn đến bến xe</a></p>
-        </div>
-      </div>
+      <div class="transport" role="listitem">
+        <img src="phuongtien3.jpg" alt="Xe buýt">
+        <div class="info">
+          <h4>Xe buýt + chuyển tàu</h4>
+          <p>Đi xe buýt đến bến Cần Thạnh (kết nối từ TP.HCM).<br>Giá vé xe buýt: ~20.000đ/lượt. Thời gian: 60–90 phút (tùy tuyến).</p>
+          <p><a href="https://www.google.com/maps?q=b%C3%A9n+xe+bus+C%E1%BA%A7n+Th%E1%BA%AFnh" target="_blank" rel="noopener">Hướng dẫn đến bến xe</a></p>
+        </div>
+      </div>
 
-      <div class="transport" role="listitem">
-        <img src="phuongtien4.jpg" alt="Xe máy">
-        <div class="info">
-          <h4>Xe máy / Xe cá nhân</h4>
-          <p>Gửi xe tại bến tàu (phí ~10.000đ/ngày). Linh hoạt, phù hợp cho nhóm nhỏ hoặc người thích chủ động.</p>
-          <p>Gợi ý: kiểm tra điều kiện gửi xe & an toàn trước khi gửi.</p>
-        </div>
-      </div>
-    </div>
+      <div class="transport" role="listitem">
+        <img src="phuongtien4.jpg" alt="Xe máy">
+        <div class="info">
+          <h4>Xe máy / Xe cá nhân</h4>
+          <p>Gửi xe tại bến tàu (phí ~10.000đ/ngày). Linh hoạt, phù hợp cho nhóm nhỏ hoặc người thích chủ động.</p>
+          <p>Gợi ý: kiểm tra điều kiện gửi xe & an toàn trước khi gửi.</p>
+        </div>
+      </div>
+    </div>
 
-    <p style="margin-top:12px;font-style:italic;color:#07554c">Ghi chú: giờ & giá trên là tham khảo. Trước khi đi, hãy gọi điện kiểm tra lịch tàu/xe trong ngày.</p>
-  </article>
+    <p style="margin-top:12px;font-style:italic;color:#07554c">Ghi chú: giờ & giá trên là tham khảo. Trước khi đi, hãy gọi điện kiểm tra lịch tàu/xe trong ngày.</p>
+  </article>
 
-  <!-- ẨM THỰC & ĐẶC SẢN (with portrait images) -->
-  <article id="sec-amthuc" class="section" role="article" aria-labelledby="sec-amthuc-title">
-    <h2 id="sec-amthuc-title">Ẩm thực & đặc sản</h2>
-    <p>Hải sản tươi sống là linh hồn của ẩm thực Thạnh An. Dưới đây là vài món bạn nên thử khi đến đảo:</p>
+    <article id="sec-amthuc" class="section" role="article" aria-labelledby="sec-amthuc-title">
+    <h2 id="sec-amthuc-title">Ẩm thực & đặc sản</h2>
+    <p>Hải sản tươi sống là linh hồn của ẩm thực Thạnh An. Dưới đây là vài món bạn nên thử khi đến đảo:</p>
 
-    <div class="food-grid">
-      <div class="food-card">
-        <img src="haunuong.png" alt="Hàu nướng">
-        <div class="food-caption">
-          <h4>Hàu nướng <br> (Nguồn: https://www.facebook.com/share/p/17Ar25TdYB/ ) </h4>
-          <p>Hàu được nướng trên than hồng, có thể được phết mỡ hành thơm, rắc chút tiêu — vị béo ngậy, mằn mặn hài hòa. Thường ăn kèm muối tiêu chanh để tăng hương vị. Gợi ý: tìm quán ở gần chợ hải sản để ăn hàu thật tươi.</p>
-        </div>
-      </div>
+    <div class="food-grid">
+      <div class="food-card">
+        <img src="haunuong.png" alt="Hàu nướng">
+        <div class="food-caption">
+          <h4>Hàu nướng <br> (Nguồn: https://www.facebook.com/share/p/17Ar25TdYB/ ) </h4>
+          <p>Hàu được nướng trên than hồng, có thể được phết mỡ hành thơm, rắc chút tiêu — vị béo ngậy, mằn mặn hài hòa. Thường ăn kèm muối tiêu chanh để tăng hương vị. Gợi ý: tìm quán ở gần chợ hải sản để ăn hàu thật tươi.</p>
+        </div>
+      </div>
 
-      <div class="food-card">
-        <img src="amthuc.jpg" alt="Khô cá">
-        <div class="food-caption">
-          <h4>Khô cá</h4>
-          <p>Món ăn đặc trưng của vùng biển, khô cá được chế biến từ cá tươi, phơi nắng cho đến khi khô lại. Thường được ăn kèm với cơm trắng và rau sống, tạo nên hương vị đậm đà, khó quên. </p>
-        </div>
-      </div>
+      <div class="food-card">
+        <img src="amthuc.jpg" alt="Khô cá">
+        <div class="food-caption">
+          <h4>Khô cá</h4>
+          <p>Món ăn đặc trưng của vùng biển, khô cá được chế biến từ cá tươi, phơi nắng cho đến khi khô lại. Thường được ăn kèm với cơm trắng và rau sống, tạo nên hương vị đậm đà, khó quên. </p>
+        </div>
+      </div>
 
-      <div class="food-card">
-        <img src="bachtuocnuong.png" alt="Bạch tuộc nướng và Nghêu hấp sả ớt">
-        <div class="food-caption">
-          <h4>Bạch tuộc nướng và Nghêu hấp sả ớt <br> (Nguồn: facebook_@nguyen.phuong.uyen)</h4>
-          <p>Bạch tuộc nhỏ được nướng trên bếp than cho lớp vỏ se nhẹ, thịt dai giòn, thường chấm muối ớt xanh hoặc nước mắm chua cay. Vị mặn mòi kèm chút khói rất ngon. Nghêu hấp sả có vị ngọt thanh và vị mặn của biển mang đến một cảm giác khó quên.</p>
-        </div>
-      </div>
+      <div class="food-card">
+        <img src="bachtuocnuong.png" alt="Bạch tuộc nướng và Nghêu hấp sả ớt">
+        <div class="food-caption">
+          <h4>Bạch tuộc nướng và Nghêu hấp sả ớt <br> (Nguồn: facebook_@nguyen.phuong.uyen)</h4>
+          <p>Bạch tuộc nhỏ được nướng trên bếp than cho lớp vỏ se nhẹ, thịt dai giòn, thường chấm muối ớt xanh hoặc nước mắm chua cay. Vị mặn mòi kèm chút khói rất ngon. Nghêu hấp sả có vị ngọt thanh và vị mặn của biển mang đến một cảm giác khó quên.</p>
+        </div>
+      </div>
 
-      <div class="food-card">
-        <img src="ghe.png" alt="Ghẹ hấp">
-        <div class="food-caption">
-          <h4>Ghẹ hấp <br> (Nguồn:https://www.facebook.com/vietnamlovers)</h4>
-          <p>Ghẹ hấp chinh phục thực khách bằng chính vị ngọt nguyên bản. Từng thớ thịt trắng phau, săn chắc, đậm đà hương vị biển cả. Chấm cùng muối tiêu chanh ớt, vị ngọt thanh hòa quyện với chút chua cay, tạo nên một trải nghiệm ẩm thực đơn giản mà tuyệt vời.</p>
-        </div>
-      </div>
+      <div class="food-card">
+        <img src="ghe.png" alt="Ghẹ hấp">
+        <div class="food-caption">
+          <h4>Ghẹ hấp <br> (Nguồn:https://www.facebook.com/vietnamlovers)</h4>
+          <p>Ghẹ hấp chinh phục thực khách bằng chính vị ngọt nguyên bản. Từng thớ thịt trắng phau, săn chắc, đậm đà hương vị biển cả. Chấm cùng muối tiêu chanh ớt, vị ngọt thanh hòa quyện với chút chua cay, tạo nên một trải nghiệm ẩm thực đơn giản mà tuyệt vời.</p>
+        </div>
+      </div>
 
-      <div class="food-card" style="flex:1 1 100%">
-        <img src="amthuc3.png" alt="Ẩm thực Thạnh An">
-        <div class="food-caption">
-          <h4>Ẩm thực Thạnh An <br> (Nguồn: Facebook_Kẻ Du Mục )</h4>
-          <p>Một bữa hải sản tươi, chế biến tại chỗ — trải nghiệm địa phương nên thử khi đến đảo.</p>
-        </div>
-      </div>
-    </div>
+      <div class="food-card" style="flex:1 1 100%">
+        <img src="amthuc3.png" alt="Ẩm thực Thạnh An">
+        <div class="food-caption">
+          <h4>Ẩm thực Thạnh An <br> (Nguồn: Facebook_Kẻ Du Mục )</h4>
+          <p>Một bữa hải sản tươi, chế biến tại chỗ — trải nghiệm địa phương nên thử khi đến đảo.</p>
+        </div>
+      </div>
+    </div>
 
-    <p style="margin-top:10px">Gợi ý: khi ghé chợ hải sản, bạn có thể mua hải sản tươi rồi yêu cầu quán chế biến ngay — vừa rẻ vừa ngon. Hỏi người dân địa phương để tìm quán gia truyền, họ thường chỉ bạn chỗ ăn đúng vị.</p>
-  </article>
+    <p style="margin-top:10px">Gợi ý: khi ghé chợ hải sản, bạn có thể mua hải sản tươi rồi yêu cầu quán chế biến ngay — vừa rẻ vừa ngon. Hỏi người dân địa phương để tìm quán gia truyền, họ thường chỉ bạn chỗ ăn đúng vị.</p>
+  </article>
 
-  <!-- LỊCH TRÌNH (phóng to) -->
-  <article id="sec-lichtrinh" class="section" role="article" aria-labelledby="sec-lichtrinh-title">
-    <h2 id="sec-lichtrinh-title">🗺️ Gợi ý lịch trình</h2>
-    <div class="wizard" aria-live="polite">
-      <div class="progress" aria-hidden="true"><div class="progress-bar" id="progressBar">0%</div></div>
-      <div id="wizard" style="font-size:1.05rem"></div>
-      <div id="itineraryOutput" style="margin-top:16px;font-size:1.05rem"></div>
-    </div>
-  </article>
+    <article id="sec-lichtrinh" class="section" role="article" aria-labelledby="sec-lichtrinh-title">
+    <h2 id="sec-lichtrinh-title">🗺️ Gợi ý lịch trình</h2>
+    <div class="wizard" aria-live="polite">
+      <div class="progress" aria-hidden="true"><div class="progress-bar" id="progressBar">0%</div></div>
+      <div id="wizard" style="font-size:1.05rem"></div>
+      <div id="itineraryOutput" style="margin-top:16px;font-size:1.05rem"></div>
+    </div>
+  </article>
 
-  <!-- KINH NGHIỆM & ĐÁNH GIÁ -->
-  <article id="sec-danhgia" class="section" role="article" aria-labelledby="sec-danhgia-title">
-    <h2 id="sec-danhgia-title">Kinh nghiệm & Đánh giá</h2>
+    <article id="sec-danhgia" class="section" role="article" aria-labelledby="sec-danhgia-title">
+    <h2 id="sec-danhgia-title">Kinh nghiệm & Đánh giá</h2>
 
-    <div style="display:flex;flex-direction:column;gap:10px;align-items:center">
-      <div style="width:100%;max-width:900px">
-        <p>Chia sẻ kinh nghiệm, cảm nhận và đánh giá của du khách khi đến với xã đảo Thạnh An. Để chân thực hơn, dưới đây là video giới thiệu bạn có thể xem:</p>
-        <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:10px;box-shadow:0 12px 30px rgba(0,0,0,0.06);margin-top:12px">
-          <!-- YouTube embed (responsive) -->
-         <iframe src="https://www.youtube.com/embed/6FNsIMW5lVY" title="Video giới thiệu Thạnh An" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%"></iframe>
-        </div>
-      </div>
-             <h3>Nguồn: Truyền hình Vĩnh Long</h3>
+    <div style="display:flex;flex-direction:column;gap:10px;align-items:center">
+      <div style="width:100%;max-width:900px">
+        <p>Chia sẻ kinh nghiệm, cảm nhận và đánh giá của du khách khi đến với xã đảo Thạnh An. Để chân thực hơn, dưới đây là video giới thiệu bạn có thể xem:</p>
+        <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:10px;box-shadow:0 12px 30px rgba(0,0,0,0.06);margin-top:12px">
+                   <iframe src="https://www.youtube.com/embed/6FNsIMW5lVY" title="Video giới thiệu Thạnh An" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%"></iframe>
+        </div>
+      </div>
+             <h3>Nguồn: Truyền hình Vĩnh Long</h3>
 
-      <div style="width:100%">
-        <div class="rating-block" aria-label="Đánh giá website">
-          <p><b>Đánh giá Website:</b></p>
-          <input type="range" id="rateWeb" min="1" max="5" value="3" aria-valuemin="1" aria-valuemax="5">
-          <div class="rating-result" id="webResult">😐 3/5 - Bình thường</div>
-        </div>
+      <div style="width:100%">
+        <div class="rating-block" aria-label="Đánh giá website">
+          <p><b>Đánh giá Website:</b></p>
+          <input type="range" id="rateWeb" min="1" max="5" value="3" aria-valuemin="1" aria-valuemax="5">
+          <div class="rating-result" id="webResult">😐 3/5 - Bình thường</div>
+        </div>
 
-        <div class="rating-block" aria-label="Đánh giá xã đảo">
-          <p><b>Đánh giá Xã đảo Thạnh An:</b></p>
-          <input type="range" id="rateIsland" min="1" max="5" value="4" aria-valuemin="1" aria-valuemax="5">
-          <div class="rating-result" id="islandResult">😊 4/5 - Thú vị</div>
-        </div>
+        <div class="rating-block" aria-label="Đánh giá xã đảo">
+          <p><b>Đánh giá Xã đảo Thạnh An:</b></p>
+          <input type="range" id="rateIsland" min="1" max="5" value="4" aria-valuemin="1" aria-valuemax="5">
+          <div class="rating-result" id="islandResult">😊 4/5 - Thú vị</div>
+        </div>
 
-        <div style="margin-top:10px;background:#fff;padding:12px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.04)">
-          <label for="ratingComment" style="font-weight:700;color:#0b5563">Góp ý / Bình luận (tuỳ chọn)</label>
-          <textarea id="ratingComment" placeholder="Viết cảm nhận của bạn..." style="width:100%;min-height:80px;padding:10px;border-radius:8px;border:1px solid #e6f5f4;margin-top:8px"></textarea>
-          <div style="display:flex;gap:8px;margin-top:8px">
-            <button id="sendRatingBtn" class="send-btn" style="background:linear-gradient(180deg,#00c7ab,#008f86);color:white;border:none;padding:10px 14px;border-radius:10px;font-weight:800">Gửi đánh giá</button>
-            <div id="ratingStatus" style="align-self:center;color:#007f73;font-weight:700"></div>
-          </div>
-        </div>
+        <div style="margin-top:10px;background:#fff;padding:12px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.04)">
+          <label for="ratingComment" style="font-weight:700;color:#0b5563">Góp ý / Bình luận (tuỳ chọn)</label>
+          <textarea id="ratingComment" placeholder="Viết cảm nhận của bạn..." style="width:100%;min-height:80px;padding:10px;border-radius:8px;border:1px solid #e6f5f4;margin-top:8px"></textarea>
+          <div style="display:flex;gap:8px;margin-top:8px">
+            <button id="sendRatingBtn" class="send-btn" style="background:linear-gradient(180deg,#00c7ab,#008f86);color:white;border:none;padding:10px 14px;border-radius:10px;font-weight:800">Gửi đánh giá</button>
+            <div id="ratingStatus" style="align-self:center;color:#007f73;font-weight:700"></div>
+          </div>
+        </div>
 
-        <p id="thanksMsg" style="color:#007f73;margin-top:8px;"></p>
-      </div>
-    </div>
-  </article>
+        <p id="thanksMsg" style="color:#007f73;margin-top:8px;"></p>
+      </div>
+    </div>
+  </article>
 
-  <!-- GÓP Ý -->
-  <article id="sec-gopy" class="section" role="article" aria-labelledby="sec-gopy-title">
-    <h2 id="sec-gopy-title">Góp ý của bạn</h2>
-    <div class="feedback-area">
-      <p>Vui lòng nhập góp ý:</p>
-      <textarea id="feedbackTextPopup" placeholder="Viết góp ý tại đây..."></textarea>
-      <button class="send-btn" id="sendFeedbackPopup">Gửi góp ý</button>
-      <p id="feedbackThanks" style="color:#007f73;margin-top:8px"></p>
-    </div>
-  </article>
+    <article id="sec-gopy" class="section" role="article" aria-labelledby="sec-gopy-title">
+    <h2 id="sec-gopy-title">Góp ý của bạn</h2>
+    <div class="feedback-area">
+      <p>Vui lòng nhập góp ý:</p>
+      <textarea id="feedbackTextPopup" placeholder="Viết góp ý tại đây..."></textarea>
+      <button class="send-btn" id="sendFeedbackPopup">Gửi góp ý</button>
+      <p id="feedbackThanks" style="color:#007f73;margin-top:8px"></p>
+    </div>
+  </article>
 
-  <!-- LIÊN HỆ -->
-  <article id="sec-lienhe" class="section" role="article" aria-labelledby="sec-lienhe-title">
-    <h2 id="sec-lienhe-title">Liên hệ & Bản đồ</h2>
-    <p>Thông tin liên hệ mẫu và bản đồ vị trí xã đảo Thạnh An.</p>
+    <article id="sec-lienhe" class="section" role="article" aria-labelledby="sec-lienhe-title">
+    <h2 id="sec-lienhe-title">Liên hệ & Bản đồ</h2>
+    <p>Thông tin liên hệ mẫu và bản đồ vị trí xã đảo Thạnh An.</p>
 
-    <div class="map-wrap" style="margin-top:12px">
-      <img src="chaotambiet.jpg"
-     alt="Khung cảnh xã đảo Thạnh An"
-     style="width:100%;border-radius:12px;margin-top:12px;box-shadow:0 10px 25px rgba(0,0,0,0.12)">
+    <div class="map-wrap" style="margin-top:12px">
+      <img src="chaotambiet.jpg"
+     alt="Khung cảnh xã đảo Thạnh An"
+     style="width:100%;border-radius:12px;margin-top:12px;box-shadow:0 10px 25px rgba(0,0,0,0.12)">
 
-      <!-- Nhúng bản đồ chỉ đường (THPT Nam Sài Gòn -> Thạnh An) - bạn cung cấp iframe -->
-      <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d250970.58771044118!2d106.68246047981913!3d10.624798977184783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x31752f8a9b3858d7%3A0x77e528ecf5242147!2zVHLGsOG7nW5nIFRp4buDdSBI4buNYyAtIFRIQ1MgLSBUSFBUIE5hbSBTw6BpIEfDsm4sIE5ndXnhu4VuIEzGsMahbmcgQuG6sW5nLCBLaHUgxJHDtCB0aOG7iyBQaMO6IE3hu7kgSMawbmcsIFTDom4gUGjDuiwgRGlzdHJpY3QgNywgSG8gQ2hpIE1pbmggQ2l0eQ!3m2!1d10.724763399999999!2d106.7232796!4m5!1s0x317514d98895fd47%3A0x7eae6a1c0fa59833!2zVGhhbmggQW4sIEPhuqduIEdp4budLCBIbyBDaGkgTWluaCBDaXR5LCBWaWV0bmFt!3m2!1d10.5242455!2d106.97127909999999!5e0!3m2!1sen!2s!4v1760975846526!5m2!1sen!2s" width="100%" height="420" style="border:0;border-radius:12px;box-shadow:0 10px 25px rgba(0,0,0,0.12);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d250970.58771044118!2d106.68246047981913!3d10.624798977184783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x31752f8a9b3858d7%3A0x77e528ecf5242147!2zVHLGsOG7nW5nIFRp4buDdSBI4buNYyAtIFRIQ1MgLSBUSFBUIE5hbSBTw6BpIEfDsm4sIE5ndXnhu4VuIEzGsMahbmcgQuG6sW5nLCBLaHUgxJHDtCB0aOG7iyBQaMO6IE3hu7kgSMawbmcsIFTDom4gUGjDuiwgRGlzdHJpY3QgNywgSG8gQ2hpIE1pbmggQ2l0eQ!3m2!1d10.724763399999999!2d106.7232796!4m5!1s0x317514d98895fd47%3A0x7eae6a1c0fa59833!2zVGhhbmggQW4sIEPhuqduIEdp4budLCBIbyBDaGkgTWluaCBDaXR5LCBWaWV0bmFt!3m2!1d10.5242455!2d106.97127909999999!5e0!3m2!1sen!2s!4v1760975846526!5m2!1sen!2s" width="100%" height="420" style="border:0;border-radius:12px;box-shadow:0 10px 25px rgba(0,0,0,0.12);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
 <p style="margin-top:8px">
-      🚗 <a href="https://maps.app.goo.gl/TASjwwyCxFU2q3ef6" target="_blank" style="color:#007f73;font-weight:700;text-decoration:none">Xem chỉ đường chi tiết trên Google Maps</a>
-    </p>
+      🚗 <a href="https://maps.app.goo.gl/TASjwwyCxFU2q3ef6" target="_blank" style="color:#007f73;font-weight:700;text-decoration:none">Xem chỉ đường chi tiết trên Google Maps</a>
+    </p>
 
-    <div style="margin-top:12px"><p id="feedbackInlineMsg" style="color:#007f73"></p></div>
-  </article>
+    <div style="margin-top:12px"><p id="feedbackInlineMsg" style="color:#007f73"></p></div>
+  </article>
 
-  <div class="footer-note">
-    <p style="margin:0">© 2025 Du lịch Thạnh An — Thiết kế bởi học sinh - Vân Anh - Tuệ Mẫn - 11A4 - THPT Nam Sài Gòn - TP.HCM</p>
-  </div>
+  <div class="footer-note">
+    <p style="margin:0">© 2025 Du lịch Thạnh An — Thiết kế bởi học sinh - Vân Anh - Tuệ Mẫn - 11A4 - THPT Nam Sài Gòn - TP.HCM</p>
+  </div>
 </div>
 
-<!-- Audio -->
-<audio id="bgMusic" loop>
-  <source src="https://cdn.pixabay.com/audio/2022/03/15/audio_643b77c03c.mp3" type="audio/mpeg">
-</audio>
-
-<!-- Gift popup -->
-<div class="gift-modal" id="giftModal" aria-hidden="true" role="dialog" aria-modal="true">
-  <div class="gift-card" role="document">
-    <div class="gift-icon">🎁</div>
-    <h3>🎉 Cảm ơn bạn!</h3>
-    <p>Chúng tôi đã nhận góp ý của bạn. Món quà tinh thần đã gửi tới bạn 💕</p>
-    <div style="margin-top:14px">
-      <button id="giftClose" class="send-btn" style="background:linear-gradient(180deg,#00c7ab,#008f86);color:#fff;border:none;padding:10px 14px;border-radius:10px;font-weight:800">Đóng</button>
-    </div>
-  </div>
-</div>
-
-<!-- Chat widget -->
-<button id="chatToggle" class="chat-toggle" aria-label="Mở trợ lý du lịch">💬</button>
-<div id="chatWindow" class="chat-window" role="dialog" aria-hidden="true">
-  <div class="chat-header">
-    <div style="width:42px;height:42;border-radius:10px;background:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;color:#6b213f">TA</div>
-    <div style="flex:1">
-      <div class="title" id="chatTitle">Trợ lý du lịch</div>
-      <div style="font-size:0.82rem;color:#8a6a78">Nhập yêu cầu để tạo lịch trình</div>
-    </div>
-    <button id="chatClose" title="Đóng" style="border:none;background:transparent;font-size:18px;cursor:pointer">✖️</button>
-  </div>
-  <div class="chat-body" id="chatBody" aria-live="polite">
-    <div class="msg bot"><div class="bubble">Xin chào! Mình có thể giúp bạn tạo lịch trình. Thử nhập: "2 ngày, thích chụp ảnh và ăn hải sản".</div></div>
-  </div>
-  <div class="chat-input">
-    <input id="chatInput" placeholder="Nhập yêu cầu của bạn..." aria-label="Nhập tin nhắn">
-    <button id="chatSend" class="send-btn" style="padding:8px 12px;background:#6b213f;border-radius:8px;border:none;color:white">Gửi</button>
-  </div>
-</div>
-
-<script src="https://cdn.emailjs.com/sdk/3.2.0/email.min.js"></script>
-<script>
-/* ===== Menu scroll behavior (hero remains visible) ===== */
-const menuBtns = document.querySelectorAll('.menu button');
-const sections = {
-  'sec-gioithieu': document.getElementById('sec-gioithieu'),
-  'sec-diadiem': document.getElementById('sec-diadiem'),
-  'sec-phuongtien': document.getElementById('sec-phuongtien'),
-  'sec-amthuc': document.getElementById('sec-amthuc'),
-  'sec-lichtrinh': document.getElementById('sec-lichtrinh'),
-  'sec-danhgia': document.getElementById('sec-danhgia'),
-  'sec-gopy': document.getElementById('sec-gopy'),
-  'sec-lienhe': document.getElementById('sec-lienhe')
-};
-function clearActive(){ menuBtns.forEach(b=>b.classList.remove('active')); }
-menuBtns.forEach(btn=>{
-  btn.addEventListener('click', ()=>{
-    const target = btn.dataset.target;
-    clearActive(); btn.classList.add('active');
-    const el = sections[target];
-    if(!el) return;
-    const rect = el.getBoundingClientRect();
-    const scrollTop = window.scrollY || window.pageYOffset;
-    const topPosition = scrollTop + rect.top - 16;
-    window.scrollTo({top: topPosition, behavior: 'smooth'});
-    el.style.transition = 'box-shadow .35s ease, transform .35s ease';
-    el.style.boxShadow = '0 30px 70px rgba(0,120,100,0.12)';
-    el.style.transform = 'translateY(-6px)';
-    setTimeout(()=>{ el.style.boxShadow=''; el.style.transform=''; }, 700);
-  });
-});
-
-/* ===== on load ensure hero visible ===== */
-window.addEventListener('load', ()=>{ window.scrollTo({top:0}); });
-
-/* ===== Footprint click effect ===== */
-document.addEventListener('click', (e)=>{
-  if(e.target.closest('button') || e.target.closest('input') || e.target.closest('textarea') || e.target.closest('.menu') || e.target.closest('.gift-modal') || e.target.closest('.chat-window')) return;
-  const fp = document.createElement('div');
-  fp.className = 'footprint';
-  fp.style.left = (e.pageX - 14) + 'px';
-  fp.style.top = (e.pageY - 14) + 'px';
-  document.body.appendChild(fp);
-  setTimeout(()=> fp.remove(), 1000);
-});
-
-/* ===== Music toggle ===== */
-const bgMusic = document.getElementById('bgMusic');
-const musicToggle = document.getElementById('musicToggle');
-window.addEventListener('load', ()=>{
-  bgMusic.volume = 0.45;
-  bgMusic.play().then(()=>{ musicToggle.textContent='🔊'; musicToggle.setAttribute('aria-pressed','true'); }).catch(()=>{ musicToggle.textContent='🔇'; musicToggle.setAttribute('aria-pressed','false'); });
-});
-musicToggle.addEventListener('click', ()=>{
-  if(bgMusic.paused){ bgMusic.play().then(()=>{ musicToggle.textContent='🔊'; musicToggle.setAttribute('aria-pressed','true');}).catch(()=>{musicToggle.textContent='🔇'}); }
-  else { bgMusic.pause(); musicToggle.textContent='🔇'; musicToggle.setAttribute('aria-pressed','false'); }
-});
-
-/* ===== Ratings binding ===== */
-function bindRating(id,out,storageKey){
-  const slider = document.getElementById(id);
-  const result = document.getElementById(out);
-  try{ const v = localStorage.getItem(storageKey); if(v) slider.value = v; }catch(e){}
-  function update(){
-    const val = +slider.value;
-    let emo='',msg='';
-    if(val===5){ emo='😍'; msg='Tuyệt vời'; }
-    else if(val===4){ emo='😊'; msg='Thú vị'; }
-    else if(val===3){ emo='😐'; msg='Bình thường'; }
-    else if(val===2){ emo='😢'; msg='Chưa hài lòng'; }
-    else { emo='😭'; msg='Rất không hài lòng'; }
-    const color = val>=4 ? '#008f86' : (val===3 ? '#ffb347' : '#ff5a5a');
-    result.innerHTML = `<span class="emoji" style="color:${color}">${emo}</span> ${val}/5 - ${msg}`;
-    try{ localStorage.setItem(storageKey, val) }catch(e){}
-    const thanks = document.getElementById('thanksMsg'); if(thanks) thanks.textContent='Cảm ơn bạn đã đánh giá!';
-  }
-  slider.addEventListener('input', update);
-  update();
-}
-bindRating('rateWeb','webResult','thanh_an_rate_web_vfinal');
-bindRating('rateIsland','islandResult','thanh_an_rate_island_vfinal');
-
-/* ===== EmailJS init (public key) ===== */
-try {
-  emailjs.init('YYGrb7AvLHJV5G_J6');
-} catch(e){
-  console.warn('EmailJS init warning:', e);
-}
-
-/* ===== Feedback (EmailJS + sessionStorage) && gift popup ===== */
-const sendFeedbackBtn = document.getElementById('sendFeedbackPopup');
-const feedbackText = document.getElementById('feedbackTextPopup');
-const feedbackThanks = document.getElementById('feedbackThanks');
-const giftModal = document.getElementById('giftModal');
-const giftClose = document.getElementById('giftClose');
-const feedbackInlineMsg = document.getElementById('feedbackInlineMsg');
-
-sendFeedbackBtn.addEventListener('click', async ()=>{
-  const txt = feedbackText.value.trim();
-  if(!txt){ alert('Vui lòng nhập góp ý trước khi gửi.'); return; }
-
-  // save locally in sessionStorage
-  try {
-    const arr = JSON.parse(sessionStorage.getItem('thanh_an_feedbacks_final')||'[]');
-    arr.push({text: txt, at: new Date().toISOString()});
-    sessionStorage.setItem('thanh_an_feedbacks_final', JSON.stringify(arr));
-  } catch(e){}
-
-  // prepare template params (match with your EmailJS template variables)
-  const templateParams = {
-    to_email: 'nglevya08@gmail.com',
-    from_name: 'Khách tham quan trang Thạnh An',
-    message: txt,
-    at_time: new Date().toLocaleString()
-  };
-
-  let emailSent = false;
-  try {
-    await emailjs.send('service_7bvm11t', 'template_q50kv4a', templateParams);
-    emailSent = true;
-  } catch(err){
-    console.warn('EmailJS send failed:', err);
-  }
-
-  feedbackText.value = '';
-  feedbackThanks.textContent = emailSent ? 'Cảm ơn bạn đã gửi góp ý!' : 'Góp ý đã lưu cục bộ. (Không gửi được mail)';
-  // show gift modal with fun confetti
-  giftModal.classList.add('show'); giftModal.setAttribute('aria-hidden','false');
-
-  for(let i=0;i<12;i++){
-    const s = document.createElement('div');
-    s.style.position='absolute';
-    s.style.width='8px'; s.style.height='8px'; s.style.borderRadius='50%';
-    s.style.left = (40 + (Math.random()*120-60)) + '%';
-    s.style.top = (58 + Math.random()*40) + '%';
-    s.style.background = ['#b3ffec','#ffd87a','#9ad0ff','#ffb6c1','#ff6b6b'][i%5];
-    s.style.opacity = 1; s.style.zIndex = 1300;
-    giftModal.appendChild(s);
-    s.animate([
-      { transform: 'translateY(0) translateX(0) rotate(0deg)', opacity:1 },
-      { transform: `translateY(-${160 + Math.random()*80}px) translateX(${40 + Math.random()*80}px) rotate(${360*Math.random()}deg)`, opacity:0 }
-    ],{ duration: 900 + Math.random()*800, easing: 'cubic-bezier(.2,.8,.2,1)'});
-    setTimeout(()=> s.remove(), 1800);
-  }
-
-  setTimeout(()=>{ giftModal.classList.remove('show'); giftModal.setAttribute('aria-hidden','true'); }, 3000);
-
-  if(feedbackInlineMsg){
-    feedbackInlineMsg.textContent = 'Cảm ơn! Chúng tôi đã nhận góp ý của bạn.';
-    setTimeout(()=> feedbackInlineMsg.textContent = '', 3600);
-  }
-});
-
-if(giftClose) giftClose.addEventListener('click', ()=>{ giftModal.classList.remove('show'); giftModal.setAttribute('aria-hidden','true'); });
-
-/* ===== Send rating (new) ===== */
-const sendRatingBtn = document.getElementById('sendRatingBtn');
-const ratingStatus = document.getElementById('ratingStatus');
-sendRatingBtn.addEventListener('click', async ()=>{
-  const webVal = document.getElementById('rateWeb').value;
-  const islandVal = document.getElementById('rateIsland').value;
-  const comment = document.getElementById('ratingComment').value.trim();
-  const templateParams = {
-    to_email: 'nglevya08@gmail.com',
-    from_name: 'Khách đánh giá trang Thạnh An',
-    at_time: new Date().toLocaleString(),
-    rating_web: webVal,
-    rating_island: islandVal,
-    message: comment || `(Không có bình luận)`
-  };
-  ratingStatus.textContent = 'Đang gửi...';
-  try {
-    await emailjs.send('service_7bvm11t', 'template_q50kv4a', templateParams);
-    ratingStatus.textContent = 'Đã gửi! Cảm ơn bạn.';
-    try {
-      const arr = JSON.parse(localStorage.getItem('thanh_an_ratings')||'[]');
-      arr.push({web:webVal,island:islandVal,comment:comment,at:new Date().toISOString()});
-      localStorage.setItem('thanh_an_ratings', JSON.stringify(arr));
-    } catch(e){}
-    setTimeout(()=> ratingStatus.textContent = '', 4000);
-  } catch(err){
-    console.warn('Send rating failed', err);
-    ratingStatus.textContent = 'Không gửi được. Lưu cục bộ.';
-    setTimeout(()=> ratingStatus.textContent = '', 4000);
-  }
-});
-
-/* ===== Wizard logic (phóng to UI, kept behavior) ===== */
-const wizardEl = document.getElementById('wizard');
-const itineraryOutput = document.getElementById('itineraryOutput');
-const progressBar = document.getElementById('progressBar');
-// Modified cost options per your request (2tr,3tr,4tr)
-const questions = [
-  {q:"Bạn muốn ưu tiên điều gì?",opts:["Cộng đồng dân cư","Sản phẩm du lịch","Cơ sở hạ tầng","Giá cả dịch vụ","An ninh trật tự"]},
-  {q:"Bạn dự kiến đi bao lâu?",opts:["1 ngày","2 ngày 1 đêm"]},
-  {q:"Đi bao nhiêu người?",opts:["1 người","2-3 người","3-4 người"]},
-  {q:"Mục đích chuyến đi?",opts:["Nghỉ dưỡng","Khám phá","Nghiên cứu"]},
-  {q:"Chi phí dự kiến?",opts:["2 triệu","3 triệu","4 triệu"]},
-  {q:"Đến bằng phương tiện gì?",opts:["Xe nhà","Xe bus","Tàu/phà"]}
-];
-let answers=[];let step=0;
-function updateProgress(){let percent=Math.round((step/questions.length)*100);progressBar.style.width=percent+"%";progressBar.textContent=percent+"%";}
-function renderQ(){
-  updateProgress();
-  if(step<questions.length){
-    wizardEl.innerHTML="<h3 style='font-size:1.15rem'>"+questions[step].q+"</h3>";
-    let div=document.createElement("div");div.className="options";
-    questions[step].opts.forEach((opt,i)=>{
-      let b=document.createElement("button");b.textContent=opt;
-      setTimeout(()=>{b.classList.add("show");},i*80);
-      b.onclick=()=>{answers.push(opt);step++;renderQ();};
-      div.appendChild(b);
-    });
-    wizardEl.appendChild(div);
-  }else{ showItinerary(); }
-}
-function showItinerary(){
-  updateProgress();
-  wizardEl.innerHTML="<h3 style='font-size:1.15rem'>Kết quả lịch trình</h3>";
-  let days = answers[1] === "1 ngày" ? 1 : 2;
-  let cost = answers[4];
-  let html = "<p style='font-size:1rem;'><b>Thời gian:</b> " + answers[1] + " | <b>Chi phí:</b> " + cost + "</p>";
-  html += "<table style='width:100%;border-collapse:collapse;margin-top:10px;font-size:1rem'><tr style='background:#f6f6f6'><th style='padding:8px;border:1px solid #eee;text-align:left'>Thời gian</th><th style='padding:8px;border:1px solid #eee;text-align:left'>Hoạt động</th></tr>";
-  if(days===1){
-    html+="<tr><td style='padding:8px;border:1px solid #eee'>Sáng</td><td style='padding:8px;border:1px solid #eee'>Xuất phát, ăn sáng.</td></tr>";
-    html+="<tr><td style='padding:8px;border:1px solid #eee'>Trưa</td><td style='padding:8px;border:1px solid #eee'>Đến đảo, ăn hải sản, tham quan làng chài.</td></tr>";
-    html+="<tr><td style='padding:8px;border:1px solid #eee'>Chiều</td><td style='padding:8px;border:1px solid #eee'>Dạo bờ kè, rừng ngập mặn.</td></tr>";
-    html+="<tr><td style='padding:8px;border:1px solid #eee'>Tối</td><td style='padding:8px;border:1px solid #eee'>Trở về TP.HCM.</td></tr>";
-  } else {
-    html+="<tr><td style='padding:8px;border:1px solid #eee'>Ngày 1 sáng</td><td style='padding:8px;border:1px solid #eee'>Khởi hành, đến đảo.</td></tr>";
-    html+="<tr><td style='padding:8px;border:1px solid #eee'>Ngày 1 trưa</td><td style='padding:8px;border:1px solid #eee'>Ăn hải sản, khám phá chợ.</td></tr>";
-    html+="<tr><td style='padding:8px;border:1px solid #eee'>Ngày 1 chiều</td><td style='padding:8px;border:1px solid #eee'>Check-in homestay, chụp ảnh hoàng hôn.</td></tr>";
-    html+="<tr><td style='padding:8px;border:1px solid #eee'>Ngày 1 tối</td><td style='padding:8px;border:1px solid #eee'>Ăn tối, giao lưu văn hóa.</td></tr>";
-    html+="<tr><td style='padding:8px;border:1px solid #eee'>Ngày 2 sáng</td><td style='padding:8px;border:1px solid #eee'>Tham quan rừng ngập mặn, trải nghiệm đánh bắt cá.</td></tr>";
-    html+="<tr><td style='padding:8px;border:1px solid #eee'>Ngày 2 trưa</td><td style='padding:8px;border:1px solid #eee'>Ăn trưa, chuẩn bị về lại TP.HCM.</td></tr>";
-  }
-  html += "</table>";
-  itineraryOutput.innerHTML = html;
-}
-renderQ();
-
-/* ===== keyboard nav for menu ===== */
-document.addEventListener('keydown', (e)=>{
-  const keys = ['ArrowLeft','ArrowRight','ArrowUp','ArrowDown'];
-  if(!keys.includes(e.key)) return;
-  const activeIndex = Array.from(menuBtns).findIndex(b=> b.classList.contains('active'));
-  if(e.key === 'ArrowRight' || e.key === 'ArrowDown'){
-    const next = (activeIndex + 1) % menuBtns.length;
-    menuBtns[next].click();
-  } else if(e.key === 'ArrowLeft' || e.key === 'ArrowUp'){
-    const prev = (activeIndex - 1 + menuBtns.length) % menuBtns.length;
-    menuBtns[prev].click();
-  }
-});
-
-/* ===== reduced motion respect ===== */
-if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){
-  document.documentElement.style.scrollBehavior='auto';
-}
-
-/* =========================
-   Chat widget code
-   ========================= */
-const chatToggle = document.getElementById('chatToggle');
-const chatWindow = document.getElementById('chatWindow');
-const chatClose = document.getElementById('chatClose');
-const chatBody = document.getElementById('chatBody');
-const chatInput = document.getElementById('chatInput');
-const chatSend = document.getElementById('chatSend');
-
-const lichtrinhEl = document.getElementById('sec-lichtrinh');
-const io = new IntersectionObserver((entries)=>{
-  entries.forEach(entry=>{
-    if(entry.isIntersecting){
-      chatToggle.classList.add('show');
-    } else {
-      chatToggle.classList.remove('show');
-      chatWindow.classList.remove('show');
-      chatWindow.setAttribute('aria-hidden','true');
-    }
-  });
-},{threshold:0.25});
-io.observe(lichtrinhEl);
-
-chatToggle.addEventListener('click', ()=>{
-  chatWindow.classList.toggle('show');
-  chatWindow.setAttribute('aria-hidden', !chatWindow.classList.contains('show'));
-  if(chatWindow.classList.contains('show')) chatInput.focus();
-});
-chatClose.addEventListener('click', ()=>{ chatWindow.classList.remove('show'); chatWindow.setAttribute('aria-hidden','true'); });
-
-function appendMsg(who, text){
-  const m = document.createElement('div');
-  m.className = 'msg ' + (who==='user' ? 'user' : 'bot');
-  const b = document.createElement('div');
-  b.className = 'bubble';
-  b.innerHTML = text.replace(/\n/g,'<br>');
-  m.appendChild(b);
-  chatBody.appendChild(m);
-  chatBody.scrollTop = chatBody.scrollHeight + 100;
-}
-function generateItineraryFromText(text){
-  text = text.toLowerCase();
-  let days = 1;
-  if(/2 ngày|2 ngay|2 ngày 1 đêm/i.test(text)) days = 2;
-  let wantsPhoto = /ảnh|chụp|ảnh đẹp|photography/.test(text);
-  let purpose = 'khám phá';
-  if(/nghỉ dưỡng|relax/.test(text)) purpose='nghỉ dưỡng';
-  let plan = `Gợi ý lịch trình ${days} ${days>1 ? 'ngày' : 'ngày'} - mục tiêu: ${purpose}.\n\n`;
-  if(days===1){
-    plan += `Sáng: Khởi hành, ăn sáng trên đường. Đến đảo, tham quan làng chài.\n\n`;
-    plan += `Trưa: Thưởng thức hải sản tươi tại chợ (gợi ý: thử hàu nướng, cháo hàu).\n\n`;
-    plan += `Chiều: Dạo bờ kè, tham quan rừng ngập mặn${wantsPhoto ? ' — nhiều góc chụp đẹp cho bạn.' : '.'}\n\n`;
-    plan += `Tối: Trở về hoặc nghỉ ngơi tuỳ nhu cầu.`;
-  } else {
-    plan += `Ngày 1 - Sáng: Khởi hành, check-in homestay.\n\n`;
-    plan += `Ngày 1 - Trưa: Ăn hải sản, khám phá chợ địa phương.\n\n`;
-    plan += `Ngày 1 - Chiều: Chụp hoàng hôn trên bờ kè${wantsPhoto ? ' (nhiều góc ảnh đẹp).' : '.'}\n\n`;
-    plan += `Ngày 2 - Sáng: Tham quan rừng ngập mặn, trải nghiệm ngư dân.\n\n`;
-    plan += `Ngày 2 - Trưa: Ăn trưa, chuẩn bị về lại.`;
-  }
-  plan += `\n\nMẹo: Mang kem chống nắng, mũ, giày nhẹ, và kiểm tra tàu/xe về trước khi đặt lịch.`;
-  return plan;
-}
-chatSend.addEventListener('click', ()=>{
-  const txt = chatInput.value.trim();
-  if(!txt) return;
-  appendMsg('user', txt);
-  chatInput.value = '';
-  setTimeout(()=>{ appendMsg('bot','Đang tạo lịch trình cho bạn...'); chatBody.scrollTop = chatBody.scrollHeight; }, 300);
-  setTimeout(()=>{
-    const nodes = Array.from(chatBody.querySelectorAll('.msg.bot .bubble'));
-    if(nodes.length) nodes[nodes.length-1].parentElement.remove();
-    const plan = generateItineraryFromText(txt);
-    appendMsg('bot', plan);
-    itineraryOutput.innerHTML = '<h3 style="font-size:1.05rem">Lịch trình do Trợ lý tạo</h3><pre style="white-space:pre-wrap;background:#f8f8f9;padding:10px;border-radius:8px;border:1px solid #eee">'+plan+'</pre>';
-  }, 900 + Math.random()*500);
-});
-chatInput.addEventListener('keydown',(e)=>{ if(e.key==='Enter'){ e.preventDefault(); chatSend.click(); } });
-
-/* ===== end chat widget ===== */
-
-</script>
-
-<script>
-document.addEventListener('DOMContentLoaded',function(){
-  document.querySelectorAll('a[href^="#"]').forEach(a=>{
-    a.addEventListener('click',function(e){
-      const id = this.getAttribute('href').slice(1);
-      const el = document.getElementById(id);
-      if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth', block:'start'}); }
-    });
-  });
-});
-</script>
-
-
-<!-- Pink Messenger-style Chat (final) -->
-<style>
-#pinkChatBtn{position:fixed;right:22px;bottom:22px;width:56px;height:56px;border:none;border-radius:50%;background:#ff7fbf;color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:99999;box-shadow:0 10px 26px rgba(0,0,0,.18);font-size:22px}
-#pinkChatPanel{position:fixed;right:22px;bottom:92px;width:360px;max-width:92vw;height:480px;border-radius:12px;background:#fff;box-shadow:0 20px 60px rgba(2,20,40,.18);display:none;z-index:99999;overflow:hidden;font-family:inherit}
-#pinkChatPanel .header{background:#ff7fbf;color:#fff;padding:12px 14px;font-weight:700;display:flex;justify-content:space-between;align-items:center}
-#pinkChatPanel .body{padding:12px;height:320px;overflow:auto;background:#fff}
-#pinkChatPanel .chips{display:flex;flex-wrap:wrap;gap:8px;padding:8px 12px;border-top:1px solid #f3c8dd;background:#fff5fb}
-#pinkChatPanel .chip{padding:6px 10px;border-radius:999px;background:#ffe6f2;color:#b04a86;font-weight:600;cursor:pointer;border:1px solid #ffd6ee}
-#pinkChatPanel .footer{padding:8px 12px;display:flex;gap:8px;border-top:1px solid #eee}
-#pinkChatPanel input{flex:1;padding:8px;border:1px solid #eee;border-radius:8px}
-#pinkChatPanel button.send{background:#ff7fbf;color:#fff;border:none;padding:8px 12px;border-radius:8px;cursor:pointer}
-.msg-me{background:#ffe6f2;padding:8px 10px;border-radius:10px;margin:6px 0;display:inline-block;max-width:85%}
-.msg-bot{background:#fff0fb;padding:8px 10px;border-radius:10px;margin:6px 0;display:inline-block;border:1px solid #ffd6ee;max-width:85%}
-.row{display:flex;gap:8px}
-.row.me{justify-content:flex-end}
-.row.bot{justify-content:flex-start}
-</style>
-<div id="pinkChatBtn" title="Mở chat">💬</div>
-<div id="pinkChatPanel" aria-hidden="true">
-  <div class="header">
-    <span>Hỗ trợ lịch trình</span>
-    <button id="pinkClose" style="background:transparent;border:none;color:#fff;font-size:18px;cursor:pointer">✕</button>
-  </div>
-  <div class="body" id="pinkChatBody"></div>
-  <div class="chips">
-    <span class="chip" data-q="gợi ý lịch trình">🕓 Gợi ý lịch trình</span>
-    <span class="chip" data-q="ẩm thực nổi bật">🍽️ Ẩm thực nổi bật</span>
-    <span class="chip" data-q="phương tiện di chuyển">🚤 Phương tiện di chuyển</span>
-    <span class="chip" data-q="chi phí dự kiến">💰 Chi phí dự kiến</span>
-  </div>
-  <div class="footer">
-    <input id="pinkChatInput" placeholder="Nhập câu hỏi...">
-    <button class="send" id="pinkChatSend">Gửi</button>
-  </div>
-</div>
-<script>
-(function(){
-  const btn = document.getElementById('pinkChatBtn');
-  const panel = document.getElementById('pinkChatPanel');
-  const body = document.getElementById('pinkChatBody');
-  const input = document.getElementById('pinkChatInput');
-  const send = document.getElementById('pinkChatSend');
-  const closeBtn = document.getElementById('pinkClose');
-
-  function addMsg(sender, txt){
-    const row = document.createElement('div');
-    row.className = 'row ' + (sender==='me' ? 'me' : 'bot');
-    const bubble = document.createElement('div');
-    bubble.className = sender==='me' ? 'msg-me' : 'msg-bot';
-    bubble.innerHTML = txt;
-    row.appendChild(bubble);
-    body.appendChild(row);
-    body.scrollTop = body.scrollHeight;
-  }
-
-  const replies = {
-    'gợi ý lịch trình': 'Bạn muốn đi <b>trong ngày</b> hay <b>qua đêm</b>?<br>• Trong ngày: 06:30 tàu → 07:30 đến đảo → 08:00 bờ kè → 12:00 ăn trưa → 16:30 hoàng hôn.<br>• Qua đêm: thêm Thiềng Liềng + chợ sáng hôm sau.',
-    'ẩm thực nổi bật': 'Hải sản tươi: hàu, tôm, nghêu, cá. Giá dao động <b>30.000–80.000đ/món</b> (quán bình dân).<br>Mẹo: hỏi chế biến tại chỗ, giá ghi rõ trên menu.',
-    'phương tiện di chuyển': 'Từ Cần Thạnh đi đò qua đảo, giá tham khảo <b>10.000–15.000đ/lượt</b>, ~30 phút/chuyến.<br>Trên đảo: đi bộ/xe đạp là hợp lý.',
-    'chi phí dự kiến': 'Ngân sách tham khảo: vé đò 20k–30k khứ hồi, ăn uống 60k–160k/người, nếu ở lại ~150k–300k/đêm.'
-  };
-
-  function botReply(userText){
-    const t = (userText||'').trim().toLowerCase();
-    if(!t) return;
-    if(replies[t]){
-      addMsg('bot', replies[t] + '<div style="font-size:12px;color:#a33;margin-top:6px;">(Giá dao động tùy thời điểm)</div>');
-      return;
-    }
-    if(t.includes('ngày') && t.includes('đi')){
-      addMsg('bot','Bạn thích <b>rừng ngập mặn</b> hay <b>bờ kè</b> hơn? Mình sẽ sắp xếp khung giờ phù hợp (sáng: 06:30–10:30 / chiều: 15:00–17:30).');
-      return;
-    }
-    if(t.includes('qua đêm') || t.includes('homestay')){
-      addMsg('bot','Qua đêm nên thêm <b>Thiềng Liềng</b> + <b>chợ sớm</b>. Homestay tham khảo <b>150k–300k/đêm</b>. Muốn mình chèn vào lịch không?');
-      return;
-    }
-    if(t.includes('ăn') || t.includes('hải sản')){
-      addMsg('bot','Bạn thích <b>bình dân</b> hay <b>view biển</b>? Gợi ý: đi chợ buổi trưa khi tàu cập bến để hải sản tươi.');
-      return;
-    }
-    addMsg('bot','Mình chưa rõ lắm 🤔 Bạn thử các gợi ý ở trên: <b>gợi ý lịch trình</b>, <b>ẩm thực nổi bật</b>, <b>phương tiện di chuyển</b>, <b>chi phí dự kiến</b>.');
-  }
-
-  btn.addEventListener('click',()=>{
-    const open = panel.style.display==='block';
-    panel.style.display = open ? 'none':'block';
-    panel.setAttribute('aria-hidden', open?'true':'false');
-    if(!open){ setTimeout(()=>input.focus(),100); if(body.children.length===0){ addMsg('bot','Xin chào 👋 Bạn muốn gợi ý lịch trình <b>trong ngày</b> hay <b>qua đêm</b>?'); } }
-  });
-  closeBtn.addEventListener('click',()=>{ panel.style.display='none'; panel.setAttribute('aria-hidden','true'); });
-  send.addEventListener('click',()=>{ const val = input.value.trim(); if(!val) return; addMsg('me', val); input.value=''; setTimeout(()=> botReply(val), 500); });
-  input.addEventListener('keydown',e=>{ if(e.key==='Enter'){ send.click(); } });
-  document.querySelectorAll('#pinkChatPanel .chip').forEach(chip=>{
-    chip.addEventListener('click',()=>{ const q = chip.getAttribute('data-q'); addMsg('me', q); setTimeout(()=> botReply(q), 400); });
-  });
-})();
-</script>
-
-
-<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-<script>(function(){ try{ emailjs.init("YYGrb7AvLHJV5G_J6"); }catch(e){} })();</script>
-
-
-<script>
-function buildExcelBlob(info){
-  const now = new Date();
-  const rows = [
-    ["Góp ý/đánh giá trang web xã đảo Thạnh An"],
-    [""],
-    ["Họ và tên", info.name||"–"],
-    ["Email", info.email||"–"],
-    ["Đánh giá", (info.rating?info.rating+'/5':"–")],
-    ["Nội dung góp ý", info.comment||"–"],
-    ["Thời điểm", now.toLocaleString()]
-  ];
-  const ws = XLSX.utils.aoa_to_sheet(rows);
-  const wb = XLSX.utils.book_new();
-  XLSX.utils.book_append_sheet(wb, ws, "GopY");
-  const wbout = XLSX.write(wb, {bookType:"xlsx", type:"array"});
-  return new Blob([wbout], {type:"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"});
-}
-async function sendEmailOrDownload(info){
-  const blob = buildExcelBlob(info);
-  const file = new File([blob], "gop_y_danh_gia.xlsx", {type: blob.type});
-  const reader = new FileReader();
-  reader.onload = async function(){
-    const base64 = reader.result.split(",")[1];
-    const params = {
-      from_name: info.name||"Khách",
-      reply_to: info.email||"",
-      message: (info.message||"") + (info.rating?("\nĐiểm: "+info.rating+"/5"):"") + (info.comment?("\nNội dung: "+info.comment):""),
-      attachment: base64,
-      to_email: "nglevya08@gmail.com",
-      subject: "Góp ý/đánh giá trang web xã đảo Thạnh An"
-    };
-    try{
-      await emailjs.send("service_7bvm11t","template_q50kv4a", params);
-      return true;
-    }catch(e){
-      const url = URL.createObjectURL(blob); const a=document.createElement("a"); a.href=url; a.download="gop_y_danh_gia.xlsx"; a.click(); URL.revokeObjectURL(url);
-      return false;
-    }
-  };
-  reader.readAsDataURL(file);
-}
-document.addEventListener('DOMContentLoaded', function(){
-  const fbBtn = document.getElementById('sendFeedback');
-  if(fbBtn){
-    fbBtn.addEventListener('click', async ()=>{
-      const info = {
-        name: (document.getElementById('name')||{}).value,
-        email: (document.getElementById('email')||{}).value,
-        comment: (document.getElementById('comment')||{}).value,
-        rating: (document.getElementById('rating')||{}).value,
-        message: "Phản hồi từ mục Đánh giá"
-      };
-      sendEmailOrDownload(info);
-    });
-  }
-  const gyBtn = document.getElementById('sendGopY');
-  if(gyBtn){
-    gyBtn.addEventListener('click', async ()=>{
-      const info = {
-        name: (document.getElementById('gy_name')||{}).value,
-        email: (document.getElementById('gy_email')||{}).value,
-        comment: (document.getElementById('gy_comment')||{}).value,
-        rating: (document.getElementById('gy_rating')||{}).value,
-        message: "Phản hồi từ mục Góp ý"
-      };
-      sendEmailOrDownload(info);
-    });
-  }
-});
-</script>
-
-
-<audio id="bgMusic" loop preload="auto"><source src="assets/bg-music.mp3" type="audio/mpeg"></audio>
-<button id="musicToggle" aria-label="Bật/Tắt nhạc" style="position:fixed;right:18px;top:18px;z-index:99999;padding:8px 10px;border-radius:8px;background:#ff9fc3;border:none;color:#fff;box-shadow:0 6px 18px rgba(0,0,0,0.15);cursor:pointer">🎵</button>
-<script>
-(function(){
-  const music = document.getElementById('bgMusic');
-  const btn = document.getElementById('musicToggle');
-  let playing=false; if(btn) btn.style.opacity=0.9;
-  function toggle(){ if(!music) return; if(playing){music.pause();playing=false;btn.style.opacity=0.7;} else { music.volume=0.5; music.play().catch(()=>{}); playing=true; btn.style.opacity=1; } }
-  if(btn) btn.addEventListener('click', toggle);
-  // Start on user click buttons if they exist
-  ['.btn-start','#btnStart','.start-tour','[data-start-music]'].forEach(sel=>{
-    const el = document.querySelector(sel); if(el) el.addEventListener('click', ()=>{ if(!playing){ toggle(); } });
-  });
-})();
-</script>
-
-
-<script>
-(function(){
-  // Ensure a single tooltip instance
-  let tip = document.getElementById('wizardTooltip');
-  if(!tip){
-    tip = document.createElement('div');
-    tip.id = 'wizardTooltip';
-    document.body.appendChild(tip);
-  }
-  // Map explanations
-  const EXPLAINS = {
-    "CSHT":"<b>Cơ sở hạ tầng (CSHT):</b> Đường sá, phương tiện, lưu trú, xử lý nước thải,...",
-    "ANTT":"<b>An ninh trật tự (ANTT):</b> An toàn tài sản/tính mạng; ít cướp giật, không chặt chém/chèo kéo.",
-    "SPDL":"<b>Sản phẩm du lịch (SPDL):</b> Lặn biển, ngắm cảnh, dã ngoại, kéo cá cùng ngư dân,...",
-    "GCDV":"<b>Giá cả dịch vụ (GCDV):</b> Chi tiêu cho phòng, ăn uống, mua sắm,...",
-    "CĐDC":"<b>Cộng đồng địa phương (CĐDC):</b> Thân thiện, hiếu khách; bản sắc văn hóa, phong tục."
-  };
-  // Attach to elements inside #wizard that match any of the keys
-  function attachWizardTooltips(){
-    const wiz = document.getElementById('wizard');
-    if(!wiz) return;
-    const nodes = wiz.querySelectorAll('*');
-    nodes.forEach(el=>{
-      const txt = (el.textContent||'').trim().toUpperCase();
-      for(const key of Object.keys(EXPLAINS)){
-        if(txt===key || txt.includes(key)){
-          el.setAttribute('data-explain', EXPLAINS[key]);
-          el.style.position = el.style.position || 'relative';
-          el.addEventListener('mouseover', (ev)=>{
-            tip.innerHTML = el.getAttribute('data-explain');
-            const r = el.getBoundingClientRect();
-            const top = window.scrollY + r.bottom + 6; // show below option
-            const left = window.scrollX + r.left + Math.max(0,(r.width-280)/2);
-            tip.style.top = top + 'px';
-            tip.style.left = left + 'px';
-            tip.classList.add('show');
-          });
-          el.addEventListener('mouseout', ()=>{ tip.classList.remove('show'); });
-        }
-      }
-    });
-  }
-  document.addEventListener('DOMContentLoaded', attachWizardTooltips);
-  window.addEventListener('load', attachWizardTooltips);
-})();
-</script>
-
-
-<script>
-(function(){
-  let tip = document.getElementById('wizardTooltip');
-  if(!tip){ tip = document.createElement('div'); tip.id='wizardTooltip'; document.body.appendChild(tip); }
-  const EXPLAINS={
-    "CSHT":"<b>Cơ sở hạ tầng (CSHT):</b> Đường sá, phương tiện, lưu trú, xử lý nước thải,...",
-    "ANTT":"<b>An ninh trật tự (ANTT):</b> An toàn tài sản/tính mạng; ít cướp giật, không chặt chém/chèo kéo.",
-    "SPDL":"<b>Sản phẩm du lịch (SPDL):</b> Lặn biển, ngắm cảnh, dã ngoại, kéo cá cùng ngư dân,...",
-    "GCDV":"<b>Giá cả dịch vụ (GCDV):</b> Chi tiêu cho phòng, ăn uống, mua sắm,...",
-    "CĐDC":"<b>Cộng đồng địa phương (CĐDC):</b> Thân thiện, hiếu khách; bản sắc văn hóa, phong tục."
-  };
-  function attach(){
-    const wiz = document.getElementById('wizard') || document;
-    const nodes = wiz.querySelectorAll('*');
-    nodes.forEach(el=>{
-      const txt=(el.textContent||'').trim().toUpperCase();
-      for(const key in EXPLAINS){
-        if(txt===key || txt.includes(key)){
-          el.dataset.explain = EXPLAINS[key];
-          el.style.position = el.style.position || 'relative';
-          el.addEventListener('mouseover', ()=>{
-            tip.innerHTML = el.dataset.explain;
-            const r = el.getBoundingClientRect();
-            tip.style.top = (window.scrollY + r.bottom + 6) + 'px';
-            tip.style.left = (window.scrollX + r.left + Math.max(0,(r.width-280)/2)) + 'px';
-            tip.classList.add('show');
-          });
-          el.addEventListener('mouseout', ()=> tip.classList.remove('show'));
-        }
-      }
-    });
-  }
-  document.addEventListener('DOMContentLoaded', attach);
-  window.addEventListener('load', attach);
-})();
-
-</script>
-
-</body>
-</html>
+<div style="position: fixed; top: -500px; left: -500px; width: 100px; height: 100
