@@ -208,8 +208,15 @@ button{font-family:inherit}
 <style>
 /* === HERO equalize & glow === */
 .hero-equal{font-size:clamp(28px,4vw,44px)!important;font-weight:800;line-height:1.05;text-align:center}
-.hero-equal .glow{color:#084c47;text-shadow:0 3px 10px rgba(0,0,0,0.08);-webkit-text-fill-color:unset}
-
+.hero-equal .glow{
+  display:inline-block;
+  background: linear-gradient(90deg, #ffa200 0%, #ffe600 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  text-shadow: 0 3px 10px rgba(0,0,0,0.06);
+}
 @keyframes taGlow{from{filter:brightness(1)}to{filter:brightness(1.15)}}
 </style>
 
